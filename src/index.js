@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import './css/reset.css';
+import './css/utility.css';
+import Header from './component/Header'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Header />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,211 @@
+/* banner */
+.banner {
+    background: url(../img/about-us\ bg.jpg) center center;
+}
+
+.banner .bg {
+    background: url(../img/about-us\ bg.jpg) center center;
+}
+
+.toggle-menu ul {
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.toggle-menu ul li {
+    position  : relative;
+    overflow  : hidden;
+    padding   : 1rem 2rem;
+    font-size : 24px;
+    text-align: center;
+}
+
+.toggle-menu ul li:not(.active):before {
+    display         : block;
+    z-index         : -1;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: var(--dark-blue);
+    content         : "";
+    transform       : translateX(-100%);
+    transition      : .5s;
+}
+
+.toggle-menu ul li:hover::before {
+    transform: translateX(0%);
+}
+
+.toggle-menu ul li.active a {
+    color: var(--dark-blue);
+}
+
+.toggle-menu ul li:not(.active):hover a {
+    color: white;
+}
+
+.toggle-menu ul li+li {
+    border-left: 2px var(--dark-background-color) solid;
+}
+
+.toggle-menu ul li a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .toggle-menu ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .toggle-menu ul li:nth-of-type(3) {
+        border-left: transparent;
+    }
+}
+
+.history {
+    padding: 60px 0;
+}
+
+.history .timeline {
+    width: 100%;
+}
+
+.history .timeline li {
+    display              : grid;
+    grid-template-columns: 1fr 3fr;
+    width                : 100%;
+}
+
+.history .time {
+    border-right: 2px solid var(--dark-background-color);
+    text-align  : right;
+}
+
+.history .time,
+.timeline .things {
+    padding: 2rem 3rem;
+}
+
+.history .time .year {
+    position: relative;
+}
+
+.history .time .year h3 {
+    font-size: 80px;
+    color    : var(--darker-background-color);
+}
+
+.history .year::after {
+    content         : "";
+    display         : block;
+    position        : absolute;
+    top             : 50%;
+    right           : -49px;
+    transform       : translate(50%, -50%);
+    background-color: var(--dark-background-color);
+    width           : 10px;
+    height          : 10px;
+    border-radius   : 50%;
+    z-index         : 5;
+}
+
+@media screen and (max-width:768px) {
+    .history {
+        padding: 60px 0 0;
+    }
+}
+
+.timeline li:nth-of-type(even) {
+    background: var(--second-background-color);
+}
+
+.timeline .things figure,
+.timeline .things p {
+    width : 80%;
+    margin: 0 auto;
+}
+
+.timeline .things figure>*,
+.timeline .things p {
+    padding: 1rem;
+}
+
+.timeline .things figcaption,
+.history .time .year-thing,
+.timeline .things p {
+    font-size  : 24px;
+    line-height: 1.3;
+}
+
+.timeline .things figcaption,
+.timeline .things p {
+    font-weight: 400;
+}
+
+.history .time .year-thing {
+    font-weight: 600;
+}
+
+.timeline .things img {
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .section-title::before {
+        width: 70%;
+    }
+
+    .section-title::after {
+        left: 39.5%;
+    }
+
+    .history .timeline {
+        position: relative;
+    }
+
+    .history .timeline::before {
+        content         : "";
+        position        : absolute;
+        top             : 0;
+        left            : 24px;
+        height          : 100%;
+        width           : 2px;
+        background-color: var(--dark-background-color);
+    }
+
+    .history .year::after {
+        left: -33px;
+    }
+
+    .history .year-thing {
+        padding-left: .5em;
+    }
+
+    .history .timeline li {
+        display              : grid;
+        grid-template-columns: 1fr;
+        gap                  : 0px;
+    }
+
+    .history .time {
+        border-right: transparent;
+        text-align  : left;
+    }
+
+    .history .time,
+    .timeline .things {
+        padding: 1rem 3rem;
+    }
+
+    .timeline .things figure>*,
+    .timeline .things p {
+        padding: .5rem .5em;
+    }
+
+    .timeline .things figure,
+    .timeline .things p {
+        width: 100%;
+    }
+}

@@ -1,0 +1,325 @@
+.product-info {
+    padding-top: 100px;
+}
+
+.product-info .grid {
+    grid-template-columns: 2fr 3fr;
+}
+
+@media screen and (max-width:768px) {
+    .product-info .grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.product-info .info-group {
+    padding: 30px;
+}
+
+.product-info .img-group img {
+    width  : 80%;
+    display: block;
+    margin : 0 auto;
+}
+
+.product-info .img-group .second-img {
+    display   : flex;
+    width     : 430px;
+    overflow  : hidden;
+    padding   : 2rem 0;
+    position  : relative;
+    left      : 0;
+    transition: .5s;
+    margin    : 0 auto;
+}
+
+.product-info .second-img .prev,
+.product-info .second-img .next {
+    position        : absolute;
+    height          : 100px;
+    width           : 15px;
+    background-color: rgba(0, 0, 0, .2);
+    display         : flex;
+    align-items     : center;
+    border-radius   : 1px;
+    z-index         : 2;
+}
+
+.product-info .second-img .next {
+    right: 0;
+}
+
+.product-info .second-img .prev:hover,
+.product-info .second-img .next:hover {
+    background-color: rgba(0, 0, 0, .8);
+    color           : white;
+}
+
+.product-info .second-img .item {
+    width   : 100px;
+    padding : 0 .5rem;
+    position: relative;
+}
+
+@media screen and (max-width:768px) {
+    .product-info .img-group .second-img {
+        width: 350px;
+    }
+}
+@media screen and (max-width:576px) {
+    .product-info .img-group .second-img {
+        width:250px;
+    }
+}
+.product-info .item.active {
+    border: 2px solid var(--eye-catching-red);
+}
+
+.product-info .info-group h2,
+.product-info .info-group h3,
+.product-info .info-group h4 {
+    margin-bottom: 1em;
+}
+
+.product-info .amount {
+    display: flex;
+}
+
+.product-info .amount>* {
+    margin: 0 2rem 0 0;
+}
+
+.product-info .amountCount {
+    font-size: 0;
+}
+
+.product-info .amount input,
+.product-info .amount button {
+    border    : 0;
+    height    : 28px;
+    text-align: center;
+    font-size : 20px;
+
+}
+
+.product-info .amount button {
+    width           : 28px;
+    background-color: var(--dark-background-color);
+}
+
+.product-info .amount input {
+    width: 50px;
+}
+
+.product-info .amount input:focus {
+    outline: transparent;
+}
+
+.product-info .amount span,
+.product-info .price {
+    color: var(--eye-catching-red);
+}
+
+.product-info .price-buy {
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas  :
+        'p l b'
+    ;
+    gap: 30px;
+}
+
+.product-info .info-group .price {
+    margin-bottom: 0;
+    grid-area    : p;
+}
+
+.product-info .btn,
+.product-info .like {
+    font-size  : 16px;
+    padding    : 5px 12px;
+    display    : flex;
+    align-items: center;
+    height     : 34px;
+    cursor     : pointer;
+}
+
+.product-info .btn {
+    grid-area: b;
+}
+
+.product-info .like {
+    color          : var(--eye-catching-red);
+    border         : 1px solid var(--eye-catching-red);
+    box-shadow     : unset;
+    text-decoration: none;
+    border-radius  : 2px;
+    transition     : .5s;
+    grid-area      : l;
+}
+
+.product-info i {
+    padding: 0 .25rem;
+}
+
+.product-info .like:hover {
+    background-color: var(--eye-catching-red);
+    color           : #fff;
+}
+
+@media screen and (max-width:768px) {
+    .product-info .price-buy {
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows   : repeat(2, 1fr);
+        grid-template-areas  :
+            'p .'
+            'l b';
+    }
+}
+
+.slogan {
+    position  : relative;
+    text-align: center;
+    margin    : 30px auto;
+    padding   : 2rem 0;
+}
+
+.slogan .bg {
+    width          : 100%;
+    height         : 100%;
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    background     : url(../img/product-detail-bg.jpg);
+    background-size: cover;
+    opacity        : .8;
+    z-index        : -1;
+}
+
+/* intro */
+.intro .intro-tab {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr) 4fr;
+    gap                  : 30px;
+    margin-bottom        : .5rem;
+    border-bottom        : 2px solid var(--lightblue);
+}
+
+.intro .intro-title {
+    font-size       : 20px;
+    color           : var(--blue);
+    background-color: var(--second-background-color);
+    padding         : .75rem 1rem;
+    text-align      : center;
+    cursor          : pointer;
+}
+
+.intro .intro-title.active {
+    background-color: var(--blue);
+    color           : white;
+}
+
+.intro .tab-view {
+    width   : 100%;
+    height  : 400px;
+    overflow: auto;
+    border  : 2px solid var(--lightblue);
+    padding : 2rem;
+}
+
+.intro .intro-content {
+    display  : none;
+    font-size: 20px;
+}
+
+.intro-content.active {
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    .intro .intro-tab {
+        grid-template-columns: repeat(3, 1fr);
+        gap                  : 10px;
+    }
+
+    .intro .intro-title {
+        padding: .75rem 0;
+    }
+}
+
+/* maybe */
+.maybe {
+    margin-bottom: 30px;
+}
+
+.maybe h2 {
+    position     : relative;
+    margin-bottom: 1.5rem;
+}
+
+.maybe h2::before {
+    content         : "";
+    position        : absolute;
+    bottom          : -.5rem;
+    left            : -30%;
+    background-color: #b2b2b2;
+    height          : 3px;
+    width           : 50%;
+}
+
+.maybe h2::after {
+    content          : "";
+    position         : absolute;
+    bottom           : -.9rem;
+    left             : 19.9%;
+    background-color : #b2b2b2;
+    height           : 15px;
+    width            : 15px;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path        : polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* swiper */
+
+
+.swiper-container {
+    width : 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align             : center;
+    font-size              : 18px;
+    margin                 : 0 3rem;
+    /* Center slide text vertically */
+    display                : -webkit-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    cursor                 : pointer;
+    flex-direction         : column;
+    -webkit-box-pack       : center;
+    -ms-flex-pack          : center;
+    -webkit-justify-content: center;
+    justify-content        : center;
+    -webkit-box-align      : center;
+    -ms-flex-align         : center;
+    -webkit-align-items    : center;
+    align-items            : center;
+}
+
+.swiper-slide img {
+    width: 60%;
+}
+
+.swiper-slide .info>* {
+    padding: .5rem 0;
+}
+
+@media screen and (max-width:768px) {
+    .swiper-slide {
+        margin: 0;
+    }
+}

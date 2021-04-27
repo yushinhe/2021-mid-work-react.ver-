@@ -1,0 +1,504 @@
+
+/* slider */
+
+.swiper-container {
+    width     : 80%;
+    box-shadow: 0px 10px 50px 0px gainsboro -30px;
+    /* height : 300px; */
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+.swiper-slide {
+    width: 250px;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+/* intro */
+#intro {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100vh;
+    background-color: #A7BFE8;
+    z-index         : 10;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+#slider {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100vh;
+    background-color: var(--primary-background-color);
+    opacity         : 0;
+    transform       : translateY(100%);
+    z-index         : 10;
+}
+
+#intro .intro-txt {
+    width      : 30%;
+    font-weight: 500;
+    color      : rgb(60, 60, 60);
+    font-size  : 36px;
+}
+
+#intro .hide {
+    overflow: hidden;
+}
+
+#intro .txt {
+    transform  : translateY(100%);
+    opacity    : 0;
+    display    : inline-block;
+    font-weight: 600;
+}
+
+#intro .hide:nth-of-type(3) {
+    float: right;
+}
+
+/* service */
+.service {
+    background-color: #e7ecef;
+    padding         : 0;
+}
+
+.service .item-group {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap                  : 30px;
+}
+
+.service .item {
+    display           : grid;
+    grid-template-rows: 1fr 2fr;
+    gap               :2rem;
+    align-items       : flex-start;
+    justify-content   : center;
+    padding           : 2rem 0;
+}
+
+.service .item .title {
+    margin: 0 auto;
+}
+
+.service .item img {
+    display: block;
+    margin : 0 auto;
+    width  : 40px;
+}
+
+.service .item h3 {
+    text-align : center;
+    font-weight: 600;
+}
+
+.service .item li {
+    padding        : .5rem 0 0;
+    font-size      : 18px;
+    list-style-type: square;
+    position       : relative;
+    line-height    : 1.5;
+}
+
+.service .item+.service .item {
+    border-left: 1px black dotted;
+}
+
+@media screen and (max-width:768px) {
+    .service .item-group {
+        grid-template-columns: 1fr;
+        gap                  : 0;
+        padding: 1rem 0;
+    }
+
+    .service .item {
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows   :auto;
+        align-items: center;
+        padding    : 0 0 1rem;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .service .item-group {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .service .item {
+        grid-template-columns: 1fr; 
+        gap: .5rem;
+        padding: 0 1rem 0 2rem;  
+    }
+}
+
+/* knowledge */
+
+.knowledge .grid {
+    grid-template-columns: repeat(2, 1fr);
+    background           : url(../img/product-detail-bg.jpg);
+    padding              : 1rem 2rem;
+    margin               : 30px 0 60px;
+    border-radius        : 2px;
+}
+
+.knowledge img {
+    width: 80%;
+}
+
+.knowledge .intro {
+    padding    : 2rem 0;
+    line-height: 1.4;
+}
+
+.knowledge .intro>* {
+    margin-bottom: 1rem;
+}
+
+.knowledge h3 {
+    color      : #333;
+    font-size  : 30px;
+    font-weight: 600;
+}
+
+.knowledge h4 {
+    font-size: 22px;
+}
+
+.knowledge p {
+    font-weight: 500;
+    text-indent: 2em;
+    font-size  : 18px;
+}
+
+.knowledge .btn {
+    text-align     : center;
+    margin         : 40px 0 0 auto;
+    width          : 200px;
+    font-size      : 20px;
+    display        : block;
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .knowledge .grid {
+        grid-template-columns: 1fr;
+    }
+    
+.knowledge img {
+    width: 100%;
+}
+}
+
+/* recommand */
+
+.recommand,
+.activity,
+.slogan {
+    padding-bottom: 60px;
+}
+
+.contact h3,
+.contact h4 {
+    font-weight: 600;
+}
+
+.recommand {
+    position: relative;
+}
+
+.recommand .bg {
+    background-color: var(--second-background-color);
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    z-index         : -1;
+}
+
+.recommand .card-group {
+    padding              : 30px;
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap                  : 60px;
+}
+
+.recommand .card {
+    border-radius   : 30px;
+    box-shadow      : 0px 20px 20px rgba(0, 0, 0, .2), 0px 0px 50px rgba(0, 0, 0, .2);
+    position        : relative;
+    padding         : 1rem;
+    transition      : 1s;
+    overflow        : hidden;
+    display         : block;
+    color           : black;
+    text-decoration : none;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.recommand .card::before {
+    content         : '';
+    background-color: #A7BFE8;
+    position        : absolute;
+    top             : -50%;
+    left            : 0;
+    width           : 101%;
+    height          : 100%;
+    z-index         : -1;
+    transform       : skewY(165deg);
+    transition      : .5s;
+}
+
+.recommand .card:hover::before {
+    top      : -70%;
+    transform: skewY(210deg);
+}
+
+.recommand .card img {
+    width  : 60%;
+    display: block;
+    margin : 0 auto;
+}
+
+.recommand .card h4 {
+    margin     : .5rem;
+    font-weight: 600;
+}
+
+.recommand .card>div {
+    padding: 0 10%;
+}
+
+.recommand .card .price {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    background-color: rgba(236, 239, 241, .7);
+    padding         : 1rem;
+    margin          : 0;
+    overflow        : hidden;
+    border-radius   : 30px 0 30px 0;
+    font-weight     : bold;
+}
+
+@media screen and (max-width:768px) {
+    .recommand .card-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .recommand .card-group {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
+
+/* activity */
+
+.activity .item-group {
+    padding              : 30px;
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap                  : 60px;
+}
+
+.activity .card {
+    width          : 100%;
+    position       : relative;
+    background     : #fff;
+    transform-style: preserve-3d;
+    border-radius  : 5px;
+    transform      : perspective(2000px);
+    transition     : 1s;
+    box-shadow     : inset 300px 0 50px rgba(0, 0, 0, .5);
+}
+
+.activity .card-info {
+    padding-top: 1rem;
+}
+
+.activity .card-info>* {
+    margin: .25rem 0;
+}
+
+.activity .card-info h3 {
+    font-weight: 600;
+}
+
+.activity .card:hover {
+    transform : perspective(2000px)rotate(0deg) translateX(3rem);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+}
+
+.activity .card .imgBox {
+    position        : relative;
+    width           : 100%;
+    height          : 100%;
+    transform-origin: left;
+    z-index         : 1;
+    transition      : 1s;
+    overflow        : hidden;
+    border-radius   : 5px;
+
+}
+
+.activity .card:hover .imgBox {
+    transform: rotateY(-180deg)
+}
+
+/* .activity .card:nth-of-type(1):hover .imgBox {
+    transform: rotateY(-100deg);
+} */
+
+.activity img {
+    width: 100%;
+}
+
+.activity .card .details {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    box-sizing: border-box;
+    padding   : 20px;
+    overflow  : auto;
+    height    : 100%;
+}
+
+.activity .card-info {
+    display       : flex;
+    flex-direction: column;
+    padding-right : 1rem;
+}
+
+.activity .card-info a {
+    align-self: flex-end;
+    color     : var(--secondary-text-color);
+}
+
+.activity .btn {
+    display   : block;
+    margin    : 0 auto;
+    width     : 130px;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .activity .item-group {
+        grid-template-columns: 1fr;
+    }
+
+    .activity .card:hover {
+        transform: none;
+    }
+
+    .activity .card:hover .imgBox {
+        transform: rotateY(0deg)
+    }
+}
+
+/* slogan */
+.slogan {
+    width                : 100%;
+    position             : relative;
+    height               : 300px;
+    background           : url(../img/bible-839093_1920.png);
+    background-attachment: fixed;
+    display              : flex;
+    align-items          : center;
+    background-size      : cover;
+}
+
+.slogan .bg {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.slogan .intro {
+    color      : #fff;
+    text-shadow: 0px 0px 5px #000;
+    text-align : center;
+    width      : 100%;
+}
+
+.slogan h2 {
+    font-size: 36px;
+}
+
+.slogan h4 {
+    font-size: 24px;
+}
+
+/* contact */
+.contact {
+    margin-bottom: 60px;
+}
+
+.contact .info-and-form {
+    align-items: center;
+    padding    : 30px;
+}
+
+.info-group {
+    padding         : 2rem 3rem;
+    height          : 80%;
+    transform       : translate(3rem, 1rem);
+    background-color: var(--second-background-color);
+}
+
+.info-group>* {
+    padding: .5rem 0;
+}
+
+.info-group .info>* {
+    padding: .25rem 0;
+}
+
+.contact form {
+    padding         : 2rem 5rem;
+    background-color: white;
+    flex            : 1 0 0;
+}
+
+.form-action {
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .contact .info-and-form {
+        flex-wrap: wrap;
+        padding  : 30px 0;
+    }
+
+    .info-group {
+        width    : 100%;
+        height   : auto;
+        padding  : 2rem;
+        transform: none;
+    }
+
+    .icon {
+        justify-content: center;
+    }
+
+    .contact form {
+        padding: 1rem;
+    }
+}
