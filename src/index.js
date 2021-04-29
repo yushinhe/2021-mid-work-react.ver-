@@ -4,13 +4,15 @@ import './index.css';
 import App from './App';
 import './css/reset.css';
 import './css/utility.css';
-import Header from './component/Header'
+import Header from './component/Header';
+import Hero from './component/Hero';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <Header />
+    <Hero/>
   </React.StrictMode>,
   document.getElementById('root')
 );
