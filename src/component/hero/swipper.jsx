@@ -7,22 +7,10 @@ import 'swiper/swiper.scss';
 export default () => {
   return (
     <Swiper
-    effect={} 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 200,
-        modifier: 1,
-        slideShadows: true,
-    },
-    autoplay: {
-        delay: 1000,
-        speed: 400,
-    },
-    loop: true,
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>Slide 1</SwiperSlide>
       <SwiperSlide>Slide 2</SwiperSlide>
