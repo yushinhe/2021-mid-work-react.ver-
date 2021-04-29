@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import './index.css'
 // import Swiper JS
 import ImgSwiper from './imgSwipper';
+import { FaFacebook } from 'react-icons/fa'
+import { FaLine } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
 export default class Hero extends Component {
     constructor(props) {
         super(props)
@@ -12,10 +14,10 @@ export default class Hero extends Component {
                     detail: '太公望書林提供了很多能豐富精神的書籍，我們希望我們的讀者讀了我們的書之後，除了能擁有物質上的黃金屋，也能在書中探索到自己心中的黃金屋'
                 }
             ],
-           }
+        }
     }
     render() {
-        return(
+        return (
             <>
                 <section className="hero">
                     <div className="bg"></div>
@@ -33,9 +35,9 @@ export default class Hero extends Component {
                             </div>
                         </div>
                         <div className="d-flex icon">
-                            <i className="fab fa-facebook"></i>
-                            <i className="fab fa-line"></i>
-                            <i className="fab fa-instagram"></i>
+                            <FaFacebook className="icon" />
+                            <FaLine className="icon" />
+                            <FaInstagram className="icon" />
                         </div>
                     </div>
                 </section>

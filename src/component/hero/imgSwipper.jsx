@@ -1,8 +1,9 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { EffectCoverflow } from 'swiper';
+import SwiperCore, { EffectCoverflow,Autoplay } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-coverflow/effect-coverflow.scss';
+import './index.css';
 import img1 from '../../img/product-img/book2.png'
 import img2 from '../../img/product-img/book3.png'
 import img3 from '../../img/product-img/book4.png'
@@ -10,9 +11,9 @@ import img4 from '../../img/product-img/book5.png'
 import img5 from '../../img/product-img/book6.png'
 import img6 from '../../img/product-img/book7.png'
 
-SwiperCore.use([EffectCoverflow]);
+SwiperCore.use([EffectCoverflow, Autoplay]);
 let imgArr = [img1, img2, img3, img4, img5, img6]
-function Swipper() {
+function imgSwipper() {
   return (
     <Swiper
       grabCursor={true}
@@ -38,4 +39,4 @@ function Swipper() {
   );
 };
 
-export default Swipper;
+export default imgSwipper;

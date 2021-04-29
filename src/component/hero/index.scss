@@ -73,19 +73,35 @@
     }
 
     .icon {
-        color: black;
-    }
-
-    .icon i {
+        color     : black;
         padding   : 10px 10px 0;
         font-size : 40px;
         transform : translate(0);
         transition: .25s;
     }
 
-    .icon i:hover {
+    .icon :hover {
         color    : #6190E8;
         transform: translateY(-50%);
+    }
+
+    .swiper-container {
+        width     : 80%;
+        box-shadow: 0px 10px 50px 0px gainsboro -30px;
+        /* height : 300px; */
+    }
+
+    .swiper-container-3d .swiper-slide-shadow-left,
+    .swiper-container-3d .swiper-slide-shadow-right {
+        background-image: none;
+    }
+
+    .swiper-slide {
+        width: 250px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
     }
 
 }
