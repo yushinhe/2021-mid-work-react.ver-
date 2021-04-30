@@ -6,8 +6,9 @@ import Header from './component/Header';
 import Hero from './component/Hero';
 import Service from './component/Service';
 import Knowledge from './component/Knowledge'
-import Recommand from './component/recommand'
+import Recommand from './component/Recommand'
 import Active from './component/Active'
+import Slogan from './component/Slogan'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
     <Knowledge/>
     <Recommand/>
     <Active/>
+    <Slogan/>
   </React.StrictMode>,
   document.getElementById('root')
 );
