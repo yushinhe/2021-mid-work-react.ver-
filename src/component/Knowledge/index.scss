@@ -1,0 +1,61 @@
+.knowledge {
+    .grid {
+        grid-template-columns:1fr 1fr;
+        background           : url(../../img/main-img/product-detail-bg.jpg);
+        padding              : 1rem 2rem;
+        margin               : 30px 0 60px;
+        border-radius        : 2px;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .intro {
+        padding    : 2rem 0;
+        line-height: 1.4;
+    }
+
+    .intro>* {
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        color      : #333;
+        font-size  : 30px;
+        font-weight: 600;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    p {
+        font-weight: 500;
+        text-indent: 2em;
+        font-size  : 18px;
+    }
+
+    .btn {
+        text-align     : center;
+        margin         : 40px 0 0 auto;
+        width          : 200px;
+        font-size      : 20px;
+        display        : block;
+        text-decoration: none;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .knowledge {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}

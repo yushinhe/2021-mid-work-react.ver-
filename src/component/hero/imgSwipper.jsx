@@ -31,9 +31,9 @@ function imgSwipper() {
         { speed: 400 }
       }
       loop={true}>
-      {imgArr.map((i) => {
+      {imgArr.map((i,index) => {
         console.log(i);
-        return <SwiperSlide key={`slide-${i}`}><img src={i} /></SwiperSlide>;
+        return <SwiperSlide key={index}><img src={i} /></SwiperSlide>;
       })}
     </Swiper>
   );

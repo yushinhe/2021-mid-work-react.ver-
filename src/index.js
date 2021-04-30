@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import './css/reset.css';
 import './css/utility.css';
 import Header from './component/Header';
 import Hero from './component/Hero';
+import Service from './component/Service';
+import Knowledge from './component/Knowledge'
+import Recommand from './component/recommand'
+import Active from './component/Active'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
     <Hero />
+    <Service/>
+    <Knowledge/>
+    <Recommand/>
+    <Active/>
   </React.StrictMode>,
   document.getElementById('root')
 );

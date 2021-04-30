@@ -1,0 +1,57 @@
+.knowledge .grid {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background: url(../../img/main-img/product-detail-bg.jpg);
+  padding: 1rem 2rem;
+  margin: 30px 0 60px;
+  border-radius: 2px;
+}
+
+.knowledge img {
+  width: 80%;
+}
+
+.knowledge .intro {
+  padding: 2rem 0;
+  line-height: 1.4;
+}
+
+.knowledge .intro > * {
+  margin-bottom: 1rem;
+}
+
+.knowledge h3 {
+  color: #333;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.knowledge h4 {
+  font-size: 22px;
+}
+
+.knowledge p {
+  font-weight: 500;
+  text-indent: 2em;
+  font-size: 18px;
+}
+
+.knowledge .btn {
+  text-align: center;
+  margin: 40px 0 0 auto;
+  width: 200px;
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .knowledge .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .knowledge img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

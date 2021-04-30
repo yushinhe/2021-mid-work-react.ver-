@@ -1,0 +1,102 @@
+.recommand {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.recommand .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--second-background-color);
+}
+
+.recommand .card-group {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.recommand .card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recommand .card::before {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: -1;
+  width: 101%;
+  height: 100%;
+  background-color: #A7BFE8;
+  content: '';
+  -webkit-transform: skewY(165deg);
+          transform: skewY(165deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.recommand .card:hover::before {
+  top: -70%;
+  -webkit-transform: skewY(210deg);
+          transform: skewY(210deg);
+}
+
+.recommand .card img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.recommand .card h4 {
+  margin: .5rem;
+  font-weight: 600;
+}
+
+.recommand .card > div {
+  padding: 0 10%;
+}
+
+.recommand .card .price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  margin: 0;
+  overflow: hidden;
+  background-color: rgba(236, 239, 241, 0.7);
+  font-weight: bold;
+  border-radius: 30px 0 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .recommand .card-group {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .recommand .card-group {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

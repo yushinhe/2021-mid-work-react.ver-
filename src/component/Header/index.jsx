@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './index.css';
 import { RiAccountCircleLine } from 'react-icons/ri'
-export default class Navbar extends Component {
+export default class index extends Component {
     state = {
         isOpen: false
     }
