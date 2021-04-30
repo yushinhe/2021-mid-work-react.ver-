@@ -9,7 +9,9 @@ import Knowledge from './component/Knowledge'
 import Recommand from './component/Recommand'
 import Active from './component/Active'
 import Slogan from './component/Slogan'
+import Contact from './component/Contact'
 import reportWebVitals from './reportWebVitals';
+import Footer from './component/Footer'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +22,8 @@ ReactDOM.render(
     <Recommand/>
     <Active/>
     <Slogan/>
+    <Contact/>
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -34,7 +34,7 @@ export default class Hero extends Component {
                                 <ImgSwiper />
                             </div>
                         </div>
-                        <div className="d-flex icon">
+                        <div className="d-flex">
                             <FaFacebook className="icon" />
                             <FaLine className="icon" />
                             <FaInstagram className="icon" />

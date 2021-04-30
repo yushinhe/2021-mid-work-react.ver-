@@ -1,0 +1,63 @@
+.contact {
+    margin-bottom: 60px;
+
+    .info-and-form {
+        align-items: center;
+        padding    : 30px;
+
+        .info-group {
+            padding         : 2rem 3rem;
+            height          : 80%;
+            background-color: var(--second-background-color);
+            transform       : translate(3rem, 1rem);
+
+            >* {
+                padding: .5rem 0;
+            }
+
+            .info>* {
+                padding: .25rem 0;
+            }
+
+            .icon {
+                padding  : 10px 10px 0;
+                color    : black;
+                font-size: 60px;
+            }
+        }
+    }
+
+    form {
+        flex            : 1 0 0;
+        padding         : 2rem 5rem;
+        background-color: white;
+
+        .form-action {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contact {
+        .info-and-form {
+            flex-wrap: wrap;
+            padding  : 30px 0;
+
+            .info-group {
+                width    : 100%;
+                height   : auto;
+                padding  : 2rem;
+                transform: none;
+            }
+
+            .icon {
+                justify-content: center;
+            }
+        }
+
+        form {
+            padding: 1rem;
+        }
+    }
+}
