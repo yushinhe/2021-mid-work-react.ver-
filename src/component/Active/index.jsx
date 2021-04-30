@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Data from '../activedata';
-import 'index.css'
+import './index.css'
 export default class index extends Component {
     render() {
         let recommandActive = Data.filter((e) => e.recommand == true)
@@ -33,8 +33,8 @@ export default class index extends Component {
                                 })
                             }
 
-                            <a href="./lecture.html" className="btn btn-black">了解更多</a>
                         </div>
+                        <a href="./lecture.html" className="btn btn-black">了解更多</a>
                     </div>
                 </section>
             </>

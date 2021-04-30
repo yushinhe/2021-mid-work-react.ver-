@@ -16,10 +16,46 @@
             transform      : perspective(2000px);
             transition     : 1s;
             box-shadow     : inset 300px 0 50px rgba(0, 0, 0, .5);
+
+            img {
+                width: 100%;
+            }
+
+            .details {
+                position  : absolute;
+                top       : 0;
+                left      : 0;
+                box-sizing: border-box;
+                padding   : 20px;
+                overflow  : auto;
+                height    : 100%;
+            }
+
+            .imgBox {
+                position        : relative;
+                width           : 100%;
+                height          : 100%;
+                overflow        : hidden;
+                transform-origin: left;
+                z-index         : 1;
+                transition      : 1s;
+                border-radius   : 5px;
+            }
+
+            &:hover {
+                transform : perspective(2000px)rotate(0deg) translateX(3rem);
+                box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+
+                .imgBox {
+                    transform: rotateY(-180deg)
+                }
+            }
         }
 
         .card-info {
-            padding-top: 1rem;
+            display       : flex;
+            flex-direction: column;
+            padding       : 1rem 1rem 0 0;
 
             >* {
                 margin: .25rem 0;
@@ -28,77 +64,34 @@
             h3 {
                 font-weight: 600;
             }
+
+            a {
+                align-self: flex-end;
+                color     : var(--secondary-text-color);
+            }
         }
-        &:hover{
-           transform : perspective(2000px)rotate(0deg) translateX(3rem);
-        box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);   
-        }
-    }
-
-
-    .activity .card .imgBox {
-        position        : relative;
-        width           : 100%;
-        height          : 100%;
-        transform-origin: left;
-        z-index         : 1;
-        transition      : 1s;
-        overflow        : hidden;
-        border-radius   : 5px;
 
     }
 
-    .activity .card:hover .imgBox {
-        transform: rotateY(-180deg)
-    }
-
-    /* .activity .card:nth-of-type(1):hover .imgBox {
-        transform: rotateY(-100deg);
-    } */
-
-    .activity img {
-        width: 100%;
-    }
-
-    .activity .card .details {
-        position  : absolute;
-        top       : 0;
-        left      : 0;
-        box-sizing: border-box;
-        padding   : 20px;
-        overflow  : auto;
-        height    : 100%;
-    }
-
-    .activity .card-info {
-        display       : flex;
-        flex-direction: column;
-        padding-right : 1rem;
-    }
-
-    .activity .card-info a {
-        align-self: flex-end;
-        color     : var(--secondary-text-color);
-    }
-
-    .activity .btn {
+    .btn {
         display   : block;
         margin    : 0 auto;
         width     : 130px;
         text-align: center;
     }
 
+
     @media screen and (max-width:768px) {
-        .activity .item-group {
+        .item-group {
             grid-template-columns: 1fr;
-        }
 
-        .activity .card:hover {
-            transform: none;
-        }
+            .card:hover {
+                transform: none;
 
-        .activity .card:hover .imgBox {
-            transform: rotateY(0deg)
+                .imgBox {
+                    transform: rotateY(0deg)
+                }
+            }
         }
     }
 }
