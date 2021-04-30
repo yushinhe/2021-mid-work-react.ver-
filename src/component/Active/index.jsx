@@ -24,7 +24,7 @@ export default class index extends Component {
                                                 </div>
                                             </div>
                                             <div className="card-info">
-                                                <h3>{item.name}</h3>
+                                                <h3>{item.title}</h3>
                                                 <h4>活動日期 :{item.startTime}</h4>
                                                 <h4>主講者:{item.host}</h4>
                                             </div>
