@@ -7,8 +7,9 @@ function App() {
   return (
     <>
       <Switch>
-        {/* <Route component={() => '123'} /> */}
-        <Route  path="/" component ={Home}/>
+        <Route exact  path="/123" component={() => '456'} />
+        <Route  component={() => '123'} />
+        <Route exact path="/" component ={Home}/>
       </Switch>
     </>
   );

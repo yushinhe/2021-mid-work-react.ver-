@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Navbar from './component/Header';
 import { BrowserRouter } from 'react-router-dom';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>    
-        <Navbar />
+    <BrowserRouter>        
         <App />     
     </BrowserRouter>
   </React.StrictMode>,
