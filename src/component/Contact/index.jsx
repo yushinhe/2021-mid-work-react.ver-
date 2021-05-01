@@ -76,14 +76,14 @@ export default class index extends Component {
                                         return (
                                             <div className="form-action">
                                                 <input type="{item.type}" id="{item.id}" required />
-                                                <label for="{item.id}">{item.lab}</label>
+                                                <label htmlFor="{item.id}">{item.lab}</label>
                                             </div>
                                         )
                                     })
                                 }
                                 <div className="form-action">
                                     <textarea name="" id="opinion" cols="30" rows="10" required></textarea>
-                                    <label for="opinion">意見</label>
+                                    <label htmlFor="opinion">意見</label>
                                 </div>
                                 <button className="btn btn-black" type="submit">送出</button>
                             </form>

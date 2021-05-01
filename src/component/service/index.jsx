@@ -45,8 +45,8 @@ export default class index extends Component {
 
         return (
             <>
-                <section class="service">
-                    <div class="container item-group">
+                <section className="service">
+                    <div className="container item-group">
                         {this.state.service.map((item, index) => {
                             return (
                                 <>

@@ -1,34 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/reset.css';
-import './css/utility.css';
-import Header from './component/Header';
-import Hero from './component/Hero';
-import Service from './component/Service';
-import Knowledge from './component/Knowledge'
-import Recommand from './component/Recommand'
-import Active from './component/Active'
-import Slogan from './component/Slogan'
-import Contact from './component/Contact'
-import reportWebVitals from './reportWebVitals';
-import Footer from './component/Footer'
+import App from './App';
+import Navbar from './component/Header';
+import { BrowserRouter } from 'react-router-dom';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <Hero />
-    <Service/>
-    <Knowledge/>
-    <Recommand/>
-    <Active/>
-    <Slogan/>
-    <Contact/>
-    <Footer/>
+    <BrowserRouter>    
+        <Navbar />
+        <App />     
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+
