@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { EffectCoverflow,Autoplay } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-coverflow/effect-coverflow.scss';
-import './index.css';
+import './index.scss';
 import img1 from '../../img/product-img/book2.png'
 import img2 from '../../img/product-img/book3.png'
 import img3 from '../../img/product-img/book4.png'

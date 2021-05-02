@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './index.css'
+import './index.scss'
 import titleIcon1 from '../../img/main-img/idea.png'
 import titleIcon2 from '../../img/main-img/open-book.png'
 import titleIcon3 from '../../img/main-img/presentation.png'

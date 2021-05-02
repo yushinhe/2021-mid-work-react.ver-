@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-// import Swiper JS
 import ImgSwiper from './imgSwipper';
 import { FaFacebook } from 'react-icons/fa'
 import { FaLine } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
+import './index.scss';
 export default class Hero extends Component {
     constructor(props) {
         super(props)

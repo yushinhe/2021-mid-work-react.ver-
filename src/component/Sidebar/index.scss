@@ -1,0 +1,45 @@
+/* sidebar */
+.sidebar {
+    position: sticky;
+    top     : 76px;
+    left    : 0;
+
+    .form-group {
+        width     : 200px;
+        border-top: 2px solid #ddd;
+    }
+
+    .form-check {
+        width : 200px;
+        margin: .5rem;
+
+        input {
+            width : 20px;
+            height: 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    }
+
+    .form-select {
+        width    : 200px;
+        margin   : .5rem;
+        border   : none;
+        font-size: 20px;
+
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .sidebar {
+        position: static;
+        .form-group {
+            width    : 100%;
+            display  : flex;
+            flex-wrap: wrap;
+        }
+    }
+}

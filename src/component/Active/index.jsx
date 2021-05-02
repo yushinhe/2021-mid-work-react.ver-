@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Data from '../activedata';
-import './index.css'
+import './index.scss'
 export default class index extends Component {
     render() {
         let recommandActive = Data.filter((e) => e.recommand == true)

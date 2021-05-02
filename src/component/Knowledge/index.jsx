@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import img1 from '../../img/main-img/eagle.png'
-import './index.css'
+import './index.scss'
 import Title from '../Title'
 export default class index extends Component {
     constructor(props) {

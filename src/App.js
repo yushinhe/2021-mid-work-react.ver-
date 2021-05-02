@@ -1,26 +1,20 @@
 import React from "react";
 import Home from './page/Home'
+import Error from './page/Error'
+import ProductList from './page/ProductList'
 import {
-  HashRouter as Router,
   Switch,
   Route,
-  Link,
-  useRouteMatch,
-  useParams
 } from "react-router-dom";
 export default function App() {
   return (
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path="/about" component={() => 'About'}/>
-      
-          <Route exact path="/topics" component={() => 'Topics'}/>
-        
-          <Route exact path="/" component={Home}/>       
-          <Route component={() => 'Error'}/>
-        </Switch>
-      </div>
-    </Router>
+    <div>
+      <Switch>
+        <Route exact path="/about" component={() => 'About'} />
+        <Route exact path="/product-list" component={ProductList} />
+        <Route exact path="/" component={Home} />
+        <Route component={Error} />
+      </Switch>
+    </div>
   );
 }

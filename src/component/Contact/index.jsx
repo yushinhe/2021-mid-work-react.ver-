@@ -6,7 +6,7 @@ import { FaFacebook } from 'react-icons/fa'
 import { FaLine } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import Title from '../Title'
-import './index.css'
+import './index.scss'
 export default class index extends Component {
     constructor(props) {
         super(props)

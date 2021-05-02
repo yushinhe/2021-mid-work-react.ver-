@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Data from '../bookdata'
 import Title from '../Title'
-import './index.css'
+import './index.scss'
 export default class index extends Component {
     render() {
         let recommandBook = Data.filter(e => e.recommand == true)
