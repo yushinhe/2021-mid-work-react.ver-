@@ -1,7 +1,7 @@
 import React from "react";
 import Home from './page/Home'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link,
