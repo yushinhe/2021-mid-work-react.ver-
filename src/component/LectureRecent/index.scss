@@ -1,0 +1,108 @@
+.item {
+    grid-template-columns: 2fr 6fr 1fr;
+    grid-template-areas  : 'd i a';
+    gap                  : 2rem;
+    border-bottom        : 2px solid var(--dark-background-color);
+
+    >* {
+        padding: 2rem 0;
+    }
+
+    &:nth-of-type(odd) .date .bg {
+        background-color: var(--lightblue);
+    }
+
+    &:nth-of-type(even) .date .bg {
+        background-color: var(--dark-background-color);
+    }
+
+    &:hover .date .bg {
+        transform: translateX(0%);
+    }
+
+    .date {
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        position        : relative;
+        overflow        : hidden;
+        grid-area       : d;
+        background-color: transparent;
+        text-align      : center;
+        font-size       : 20px;
+
+        span {
+            font-size  : 60px;
+            font-weight: 600;
+        }
+
+        .bg {
+            position  : absolute;
+            width     : 100%;
+            height    : 100%;
+            top       : 0;
+            left      : 0;
+            transform : translateX(-100%);
+            transition: .5s;
+            z-index   : -1;
+        }
+    }
+
+    .intro {
+        grid-area: i;
+
+        >* {
+            padding: 0.5rem 0;
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+    }
+
+    .apply-and-know {
+        display        : flex;
+        flex-direction : column;
+        grid-area      : a;
+        justify-content: center;
+        align-items    : center;
+        text-align     : center;
+
+        .btn {
+            text-align: center;
+            margin    : .5rem 0;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        grid-template-rows   : 1fr 2fr;
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas  :
+            'd i '
+            'a i ';
+
+        >* {
+            padding: 0;
+        }
+
+        .date {
+            padding-top: 1rem;
+            font-size  : 20px;
+
+            span {
+                font-size: 40px;
+            }
+        }
+
+        .apply-and-know {
+            justify-content: flex-start;
+
+            .btn {
+                margin    : .5rem 0;
+                width     : 100px;
+                padding   : .5rem;
+                text-align: center;
+            }
+        }
+    }
+}

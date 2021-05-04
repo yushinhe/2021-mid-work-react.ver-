@@ -4,9 +4,9 @@ export default class index extends Component {
     render() {
         return (
             <>
-                <div class="pagination">
+                <div className="pagination">
                     <a href="#">&laquo;</a>
-                    <a class="active" href="#">1</a>
+                    <a className="active" href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">4</a>

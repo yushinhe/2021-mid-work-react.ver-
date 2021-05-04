@@ -4,7 +4,7 @@ import Title from '../Title'
 import './index.scss'
 export default class index extends Component {
     render() {
-        let recommandBook = Data.filter(e => e.recommand == true)
+        let recommandBook = Data.filter(e => e.recommand === true)
         return (
             <>
                 <section className="recommand">

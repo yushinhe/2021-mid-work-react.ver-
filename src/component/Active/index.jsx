@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import Data from '../activedata';
+import Title from '../Title'
 import './index.scss'
 export default class index extends Component {
     render() {
-        let recommandActive = Data.filter((e) => e.recommand == true)
+        let recommandActive = Data.filter((e) => e.recommand === true)
         return (
             <>
                 <section className="activity">
                     <div className="container">
-                        <h2 className="section-title">近期演講</h2>
+                        <Title title={"近期演講"}/>
                         <div className="item-group">
                             {
                                 recommandActive.map((item, index) => {

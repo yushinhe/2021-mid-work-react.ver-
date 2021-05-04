@@ -13,8 +13,7 @@ export default class index extends Component {
         })
 
     }
-    render() {
-        console.log(this.state.toggleActive);
+    render() {   
         return (
             <>
                 <main>

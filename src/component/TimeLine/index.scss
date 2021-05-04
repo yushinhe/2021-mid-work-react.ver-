@@ -1,0 +1,132 @@
+.history {
+    padding: 60px 0;
+
+    .timeline {
+        width: 100%;
+
+        li {
+            display              : grid;
+            grid-template-columns: 1fr 3fr;
+            width                : 100%;
+
+            &:nth-of-type(even) {
+                background: var(--second-background-color);
+            }
+
+            .time {
+                padding     : 2rem 3rem;
+                border-right: 2px solid var(--dark-background-color);
+                text-align  : right;
+
+                .year {
+                    position: relative;
+
+                    &:after {
+                        display         : block;
+                        position        : absolute;
+                        top             : 50%;
+                        right           : -49px;
+                        z-index         : 5;
+                        width           : 10px;
+                        height          : 10px;
+                        background-color: var(--dark-background-color);
+                        content         : "";
+                        border-radius   : 50%;
+                        transform       : translate(50%, -50%);
+                    }
+
+                    h3 {
+                        color    : var(--darker-background-color);
+                        font-size: 80px;
+                    }
+                }
+
+                .year-thing {
+                    font-size  : 24px;
+                    font-weight: 600;
+                    line-height: 1.3;
+                }
+            }
+
+            .things {
+                padding: 2rem 3rem;
+
+                .intro {
+                    p {
+                        width      : 80%;
+                        margin     : 0 auto;
+                        padding    : 1rem;
+                        font-size  : 24px;
+                        font-weight: 400;
+                        line-height: 1.3;
+                    }
+
+                    img {
+                        width  : 100%;
+                        padding: 1rem;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    @media screen and (max-width:768px) {
+        padding: 60px 0 0;
+
+        .timeline {
+            position: relative;
+
+            &::before {
+                position        : absolute;
+                top             : 0;
+                left            : 24px;
+                height          : 100%;
+                width           : 2px;
+                background-color: var(--dark-background-color);
+                content         : "";
+            }
+
+            li {
+                display              : grid;
+                grid-template-columns: 1fr;
+                gap                  : 0px;
+
+                .time {
+                    padding     : 1rem 3rem;
+                    border-right: transparent;
+                    text-align  : left;
+
+                    .year {
+                        &:after {
+                            left: -33px;
+                        }
+                    }
+
+                    .year-thing {
+                        padding-left: .5em;
+                    }
+
+                }
+
+                .things {
+                    padding: 1rem 3rem;
+
+                    .intro {
+                        p {
+                            margin : 0;
+                            padding: .5rem;
+                            width  : 100%;
+                        }
+
+                        img {
+                            padding: .5rem;
+                            width  : 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
