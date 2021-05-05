@@ -4,12 +4,11 @@ import active3 from '../img/active-img/active3.png';
 import active4 from '../img/active-img/active2.png';
 import active5 from '../img/active-img/active5.png';
 import active6 from '../img/active-img/active6.png';
-import book7 from '../img/product-img/book9.png';
-import book8 from '../img/product-img/book10.png';
-import book9 from '../img/product-img/book11.png';
-import book10 from '../img/product-img/book12.png';
-import book11 from '../img/product-img/book13.png';
-import book12 from '../img/product-img/book14.png';
+import active7 from '../img/active-img/active7.png';
+import active8 from '../img/active-img/active8.png';
+import active9 from '../img/active-img/active9.png';
+
+
 export default [
     {
         id: 1,
@@ -55,7 +54,7 @@ export default [
     }, {
         id: 4,
         title: '華人在澳洲的打拼與發展',
-        host: '李恆昇',
+        host: '趙孔睿',
         startTime: '2021/9/30 12:00',
         year: '2021',
         date: '9/30',
@@ -93,42 +92,42 @@ export default [
         recommand: false
     }, {
         id: 7,
-        title: '國共內戰風雲',
+        title: '清季自強運動與軍事初期改革',
         host: '李恆昇',
-        startTime: '2021/8/23 12:00',
+        startTime: '2021/10/12 12:00',
         year: '2021',
-        date: '8/23',
-        location: '桃園市中壢區復興路46號9樓 903教室',
-        price: 150,
-        introTitle: '共軍渡江戰役宣傳畫',
-        introDetail: '1949年4月21日，江陰要塞司令戴戎光叛變，共軍陳毅部隊渡過長江。從此國共劃江而治的可能性破滅，不久後國府被迫撤守台灣。有關此一重大事件當時國共兩造的佈署情形，曾經主政江蘇的丁治磐將軍留下了當時的回憶。',
-        img: active3,
+        date: '10/12',
+        location: '桃園市中壢區復興路46號8樓 801教室',
+        price: 100,
+        introTitle: '僧格林沁行獵圖',
+        introDetail: '1865年5月23日，以僧格林沁戰歿，畿輔震驚，急命曾國藩赴山東討捻，改李鴻章為兩江總督，安定時局。僧格林沁為蒙古郡王，於太平天國、英法聯軍等役均立下功勞，亦是清代最後一位滿、蒙名將。戰歿後清軍主力遂全歸漢人。此乃中國近代軍事史一大轉折。',
+        img: active7,
         recommand: false
     }, {
         id: 8,
-        title: '國共內戰風雲',
-        host: '李恆昇',
-        startTime: '2021/8/23 12:00',
+        title: '晚清「世界劇場」的理論與實踐',
+        host: '羅子豪',
+        startTime: '2021/10/16 12:00',
         year: '2021',
-        date: '8/23',
+        date: '10/16',
         location: '桃園市中壢區復興路46號9樓 903教室',
         price: 150,
         introTitle: '共軍渡江戰役宣傳畫',
         introDetail: '1949年4月21日，江陰要塞司令戴戎光叛變，共軍陳毅部隊渡過長江。從此國共劃江而治的可能性破滅，不久後國府被迫撤守台灣。有關此一重大事件當時國共兩造的佈署情形，曾經主政江蘇的丁治磐將軍留下了當時的回憶。',
-        img: active3,
+        img: active8,
         recommand: false
     }, {
         id: 9,
-        title: '國共內戰風雲',
+        title: '五卅慘案後的反英運動',
         host: '李恆昇',
-        startTime: '2021/8/23 12:00',
+        startTime: '2021/11/15 9:00',
         year: '2021',
-        date: '8/23',
-        location: '桃園市中壢區復興路46號9樓 903教室',
-        price: 150,
-        introTitle: '共軍渡江戰役宣傳畫',
-        introDetail: '1949年4月21日，江陰要塞司令戴戎光叛變，共軍陳毅部隊渡過長江。從此國共劃江而治的可能性破滅，不久後國府被迫撤守台灣。有關此一重大事件當時國共兩造的佈署情形，曾經主政江蘇的丁治磐將軍留下了當時的回憶。',
-        img: active3,
+        date: '11/15',
+        location: '桃園市中壢區復興路46號8樓 803教室',
+        price: 250,
+        introTitle: '五卅慘案',
+        introDetail: '1925年5月30日，上海學生因抗議日本資本家鎮壓罷工，舉行抗議活動，呼籲打倒帝國主義，收回租界，引起英國巡捕鎮壓，殺害13人的慘劇，震驚世界。這個事件所引發的反英運動，對於後來的中外關係有重大影響。',
+        img: active9,
         recommand: false
     }
 ]
