@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { EffectCoverflow,Autoplay } from 'swiper';
+import SwiperCore, { EffectCoverflow, Autoplay } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-coverflow/effect-coverflow.scss';
 import './index.scss';
@@ -20,18 +20,16 @@ function imgSwipper() {
       centeredSlides={true}
       slidesPerView={'auto'}
       coverflowEffect={
-        { rotate: 0 },
         { stretch: 0 },
         { depth: 200 },
         { modifier: 1 },
         { slideShadows: true }
       }
       autoplay={
-        { delay: 1000 },
         { speed: 400 }
       }
       loop={true}>
-      {imgArr.map((i,index) => {      
+      {imgArr.map((i, index) => {
         return <SwiperSlide key={index}><img src={i} /></SwiperSlide>;
       })}
     </Swiper>
