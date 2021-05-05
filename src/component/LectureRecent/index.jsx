@@ -31,8 +31,7 @@ export default class index extends Component {
     render() {
         return (
             <>
-
-                <article className="item grid">
+                <article className="lecture-item grid">
                     <div className="date">
                         <p>{this.state.year}<br /><span> {this.state.date} </span> </p>
                         <div className="bg"></div>
