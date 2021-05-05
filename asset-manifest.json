@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/2021-mid-work-react.ver-/static/css/main.dec500f1.chunk.css",
-    "main.js": "/2021-mid-work-react.ver-/static/js/main.7517b2eb.chunk.js",
-    "main.js.map": "/2021-mid-work-react.ver-/static/js/main.7517b2eb.chunk.js.map",
+    "main.css": "/2021-mid-work-react.ver-/static/css/main.373df71f.chunk.css",
+    "main.js": "/2021-mid-work-react.ver-/static/js/main.7f60c23e.chunk.js",
+    "main.js.map": "/2021-mid-work-react.ver-/static/js/main.7f60c23e.chunk.js.map",
     "runtime-main.js": "/2021-mid-work-react.ver-/static/js/runtime-main.2263191f.js",
     "runtime-main.js.map": "/2021-mid-work-react.ver-/static/js/runtime-main.2263191f.js.map",
     "static/css/2.f85945a1.chunk.css": "/2021-mid-work-react.ver-/static/css/2.f85945a1.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.1bc0b8d1.chunk.js.map": "/2021-mid-work-react.ver-/static/js/3.1bc0b8d1.chunk.js.map",
     "index.html": "/2021-mid-work-react.ver-/index.html",
     "static/css/2.f85945a1.chunk.css.map": "/2021-mid-work-react.ver-/static/css/2.f85945a1.chunk.css.map",
-    "static/css/main.dec500f1.chunk.css.map": "/2021-mid-work-react.ver-/static/css/main.dec500f1.chunk.css.map",
+    "static/css/main.373df71f.chunk.css.map": "/2021-mid-work-react.ver-/static/css/main.373df71f.chunk.css.map",
     "static/js/2.b2b4facd.chunk.js.LICENSE.txt": "/2021-mid-work-react.ver-/static/js/2.b2b4facd.chunk.js.LICENSE.txt",
     "static/media/about-us-bg.84736e0b.jpg": "/2021-mid-work-react.ver-/static/media/about-us-bg.84736e0b.jpg",
     "static/media/active1.873fc150.png": "/2021-mid-work-react.ver-/static/media/active1.873fc150.png",
@@ -21,6 +21,9 @@
     "static/media/active4.705a78af.png": "/2021-mid-work-react.ver-/static/media/active4.705a78af.png",
     "static/media/active5.cd9040a2.png": "/2021-mid-work-react.ver-/static/media/active5.cd9040a2.png",
     "static/media/active6.9130f931.png": "/2021-mid-work-react.ver-/static/media/active6.9130f931.png",
+    "static/media/active7.2a200de6.png": "/2021-mid-work-react.ver-/static/media/active7.2a200de6.png",
+    "static/media/active8.432b40ac.png": "/2021-mid-work-react.ver-/static/media/active8.432b40ac.png",
+    "static/media/active9.0178bc60.png": "/2021-mid-work-react.ver-/static/media/active9.0178bc60.png",
     "static/media/index.scss": "/2021-mid-work-react.ver-/static/media/product-detail-bg.2d29d1a2.jpg",
     "static/media/book1.4d517a15.png": "/2021-mid-work-react.ver-/static/media/book1.4d517a15.png",
     "static/media/book10.03cb2773.png": "/2021-mid-work-react.ver-/static/media/book10.03cb2773.png",
@@ -49,7 +52,7 @@
     "static/js/runtime-main.2263191f.js",
     "static/css/2.f85945a1.chunk.css",
     "static/js/2.b2b4facd.chunk.js",
-    "static/css/main.dec500f1.chunk.css",
-    "static/js/main.7517b2eb.chunk.js"
+    "static/css/main.373df71f.chunk.css",
+    "static/js/main.7f60c23e.chunk.js"
   ]
 }
