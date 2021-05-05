@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/2021-mid-work-react.ver-/static/css/main.373df71f.chunk.css",
+    "main.css": "/2021-mid-work-react.ver-/static/css/main.46b95933.chunk.css",
     "main.js": "/2021-mid-work-react.ver-/static/js/main.7f60c23e.chunk.js",
     "main.js.map": "/2021-mid-work-react.ver-/static/js/main.7f60c23e.chunk.js.map",
     "runtime-main.js": "/2021-mid-work-react.ver-/static/js/runtime-main.2263191f.js",
@@ -12,7 +12,7 @@
     "static/js/3.1bc0b8d1.chunk.js.map": "/2021-mid-work-react.ver-/static/js/3.1bc0b8d1.chunk.js.map",
     "index.html": "/2021-mid-work-react.ver-/index.html",
     "static/css/2.f85945a1.chunk.css.map": "/2021-mid-work-react.ver-/static/css/2.f85945a1.chunk.css.map",
-    "static/css/main.373df71f.chunk.css.map": "/2021-mid-work-react.ver-/static/css/main.373df71f.chunk.css.map",
+    "static/css/main.46b95933.chunk.css.map": "/2021-mid-work-react.ver-/static/css/main.46b95933.chunk.css.map",
     "static/js/2.b2b4facd.chunk.js.LICENSE.txt": "/2021-mid-work-react.ver-/static/js/2.b2b4facd.chunk.js.LICENSE.txt",
     "static/media/about-us-bg.84736e0b.jpg": "/2021-mid-work-react.ver-/static/media/about-us-bg.84736e0b.jpg",
     "static/media/active1.873fc150.png": "/2021-mid-work-react.ver-/static/media/active1.873fc150.png",
@@ -52,7 +52,7 @@
     "static/js/runtime-main.2263191f.js",
     "static/css/2.f85945a1.chunk.css",
     "static/js/2.b2b4facd.chunk.js",
-    "static/css/main.373df71f.chunk.css",
+    "static/css/main.46b95933.chunk.css",
     "static/js/main.7f60c23e.chunk.js"
   ]
 }
