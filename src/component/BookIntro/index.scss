@@ -1,0 +1,25 @@
+.book-intro {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: '. h .';
+    position  : relative;
+    text-align: center;
+    margin    : 30px auto;
+    padding   : 2rem 0;
+
+    .bg {
+        width          : 100%;
+        height         : 100%;
+        position       : absolute;
+        top            : 0;
+        left           : 0;
+        background     : url(../../img/main-img/product-detail-bg.jpg);
+        background-size: cover;
+        opacity        : .8;
+        z-index        : -1;
+    }
+
+    h3 {
+        grid-area: h;
+    }
+}

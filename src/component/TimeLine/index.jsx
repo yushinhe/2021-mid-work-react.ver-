@@ -2,17 +2,38 @@ import React, { Component } from 'react'
 import Data from '../historyData'
 import Title from '../Title'
 import './index.scss'
+
+
 export default class index extends Component {
-    render() {
+    state = {
+        data: [...Data]
+    }
+    sortYear = () => {
+        let sort = document.getElementById('sort')
+        let data='';
+        if (sort.value === 'desc') {
+            data =  this.state.data.sort((a, b) => b.year - a.year)
+        } else {
+            data =  this.state.data.sort((a, b) => a.year - b.year)
+        }
+        this.setState({
+            data: data
+        })
+    }
+    render() {       
         return (
             <>
                 <section className="history">
                     <div className="container">
                         <Title title={'發展歷史'}></Title>
+                        <select name="" id="sort" onChange={this.sortYear}>
+                            <option value="asc">時間 升序</option>
+                            <option value="desc">時間 降序</option>
+                        </select>
                         <ul className="timeline">
                             {
 
-                                Data.map((item, id) => {
+                                this.state.data.map((item, id) => {
                                     return (
                                         <li key={item.id}>
                                             <div className="time">

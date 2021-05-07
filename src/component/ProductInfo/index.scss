@@ -1,0 +1,169 @@
+.product-info {
+    padding-top: 100px;
+
+    .grid {
+        grid-template-columns: 2fr 3fr;
+
+        .img-group {
+            img {
+                width  : 80%;
+                display: block;
+                margin : 0 auto;
+            }
+
+            .second-img {
+                display   : flex;
+                width     : 430px;
+                overflow  : hidden;
+                padding   : 2rem 0;
+                position  : relative;
+                left      : 0;
+                transition: .5s;
+                margin    : 0 auto;
+
+                .prev,
+                .next {
+                    display         : flex;
+                    position        : absolute;
+                    z-index         : 2;
+                    height          : 100px;
+                    width           : 15px;
+                    background-color: rgba(0, 0, 0, .2);
+                    align-items     : center;
+                    border-radius   : 1px;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, .8);
+                        color           : white;
+                    }
+                }
+
+                .next {
+                    right: 0;
+                }
+
+                .item {
+                    width   : 100px;
+                    padding : 0 .5rem;
+                    position: relative;
+                }
+            }
+        }
+
+        .info-group {
+            padding: 30px;
+
+            h2,
+            h3,
+            h4 {
+                margin-bottom: 1em;
+            }
+
+            .amount {
+                display: flex;
+
+                h4 {
+                    margin-bottom: 1em;
+                }
+
+                .amountCount {
+                    font-size: 0;
+                }
+
+                input {
+                    width: 50px;
+
+                    &:focus {
+                        outline: transparent;
+                    }
+                }
+
+                input,
+                button {
+                    border    : 0;
+                    height    : 28px;
+                    text-align: center;
+                    font-size : 20px;
+                }
+
+                button {
+                    width           : 28px;
+                    background-color: var(--dark-background-color);
+                }
+
+                span {
+                    color: var(--eye-catching-red);
+                }
+
+                &>* {
+                    margin: 0 2rem 0 0;
+                }
+            }
+
+            .price-buy {
+                display              : grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas  :
+                    'p l b'
+                ;
+                gap: 30px;
+
+                .price {
+                    grid-area    : p;
+                    margin-bottom: 0;
+                    color        : var(--eye-catching-red);
+                }
+
+                .btn,
+                .like {
+                    font-size  : 16px;
+                    padding    : 5px 12px;
+                    display    : flex;
+                    align-items: center;
+                    height     : 34px;
+                    cursor     : pointer;
+                }
+
+                .btn {
+                    grid-area: b;
+                }
+
+                .like {
+                    color          : var(--eye-catching-red);
+                    border         : 1px solid var(--eye-catching-red);
+                    box-shadow     : unset;
+                    text-decoration: none;
+                    border-radius  : 2px;
+                    transition     : .5s;
+                    grid-area      : l;
+
+                    &:hover {
+                        background-color: var(--eye-catching-red);
+                        color           : #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .grid {
+            grid-template-columns: 1fr;
+
+            .price-buy {
+                display              : grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows   : repeat(2, 1fr);
+                grid-template-areas  :
+                    'p .'
+                    'l b';
+            }
+        }
+    }
+}
+
+
+
+.product-info i {
+    padding: 0 .25rem;
+}

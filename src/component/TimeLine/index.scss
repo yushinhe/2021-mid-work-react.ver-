@@ -1,6 +1,24 @@
 .history {
     padding: 60px 0;
 
+    select {
+        display         : block;
+        margin-left     : auto;
+        padding         : .5rem 3rem;
+        border          : transparent;
+        background-color: var(--second-background-color);
+        font-size: 18px;      
+
+
+        &:focus {
+            outline: transparent;
+        }
+
+        >* {
+            background-color: var(--second-background-color);      
+        }
+    }
+
     .timeline {
         width: 100%;
 
@@ -53,8 +71,7 @@
 
                 .intro {
                     p {
-                        width      : 80%;
-                        margin     : 0 auto;
+                        width      : 80%;                    
                         padding    : 1rem;
                         font-size  : 24px;
                         font-weight: 400;
@@ -99,6 +116,7 @@
                     text-align  : left;
 
                     .year {
+                        padding: 0;
                         &:after {
                             left: -33px;
                         }
@@ -111,7 +129,7 @@
                 }
 
                 .things {
-                    padding: 1rem 3rem;
+                    padding:0 3rem 1rem;
 
                     .intro {
                         p {

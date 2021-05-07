@@ -49,7 +49,7 @@ export default [
         img: false,
     }, {
         id: 8,
-        year: 2000,
+        year: 2005,
         subtitle: "將知識融入大眾的一般生活",
         detail: "將文化與生活進行結合，邀請許多講者舉辦演講活動，並在網路上訂期刊載文章，拓展大眾的眼界。",
         img: img4,

@@ -22,7 +22,7 @@ export default class index extends Component {
                         <ul className="d-flex align-items-center nav-menu">
                             <li><Link to="./product-list">來讀書吧</Link></li>
                             <li><Link to="./lecture">演講活動</Link></li>
-                            <li><a href="./knowledge.html">好文分享</a></li>
+                            <li><Link to="./articleList">好文分享</Link></li>
                             <li class="list-unstyled" id="to-log"><RiAccountCircleLine className="account-logo" /></li>
                         </ul>
                         <div onClick={this.handeleToggle} className={this.state.isOpen ? "menu-btn active" : "menu-btn"}>
@@ -30,8 +30,8 @@ export default class index extends Component {
                         </div>
                         <ul className={this.state.isOpen ? "sub-menu active" : "sub-menu"}>
                             <li><Link to="./product-list">來讀書吧</Link></li>
-                            <li><a href="./lecture.html">演講活動</a></li>
-                            <li><a href="./knowledge.html">好文分享</a></li>
+                            <li><Link to="./lecture">演講活動</Link></li>
+                            <li><Link to="./articleList">好文分享</Link></li>
                         </ul>
                     </nav>
                 </header >

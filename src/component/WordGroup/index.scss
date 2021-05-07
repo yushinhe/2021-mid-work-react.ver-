@@ -1,0 +1,50 @@
+.word {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+    gap          : 30px;
+
+    .item {
+        width : 100%;
+        margin: .5rem;
+
+        img {
+            width: 100%;
+        }
+
+        .intro {
+             background-color: var(--second-background-color);
+            padding         : 1rem;
+
+            &>* {
+                margin: .5rem 0;
+            }
+
+            h3 {
+                font-weight: 600;
+            }
+
+            p {
+                text-indent: 2em;
+            }
+
+            .btn {
+                display   : block;
+                margin    : 0 auto;
+                width     : 100px;
+                text-align: center;
+                font-size : 16px;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 1fr;
+
+        .grid-item {
+            width : 95%;
+            margin: 2.5% .5rem;
+        }
+    }
+}

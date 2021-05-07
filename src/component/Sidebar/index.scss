@@ -25,10 +25,9 @@
 
     .form-select {
         width    : 200px;
-        margin   : .5rem;
+        margin   : .5rem 0;
         border   : none;
         font-size: 20px;
-
     }
 
 }
@@ -36,10 +35,256 @@
 @media screen and (max-width:768px) {
     .sidebar {
         position: static;
+        padding : 0 10px;
+
         .form-group {
             width    : 100%;
             display  : flex;
             flex-wrap: wrap;
+        }
+    }
+}
+
+.booklist {
+    padding-top: 0;
+
+    .toggle {
+        display        : flex;
+        justify-content: flex-end;
+        margin-bottom  : 1rem;
+
+        .toggle-btn {
+            display      : flex;
+            margin       : 0 .5rem;
+            padding      : 5px;
+            color        : black;
+            cursor       : pointer;
+            border-radius: 2px;
+            box-shadow   : 0px 1px 4px black;
+            border       : transparent;
+
+            svg {
+                margin: auto;
+                width : 18px;
+                height: 18px;
+            }
+
+            &.active {
+                background-color: black;
+                color           : white;
+                cursor          : pointer;
+            }
+        }
+    }
+
+    .card-group {
+        padding              : 0 30px;
+        display              : grid;
+        grid-template-columns: 1fr;
+
+
+        .card {
+            position           : relative;
+            display            : grid;
+            grid-template-areas: 'g g g f f f f f f f b b b';
+            color              : black;
+            text-decoration    : black;
+            border-bottom      : 2px var(--second-background-color) solid;
+
+            >* {
+                padding: 1rem;
+            }
+
+            &:hover h3 {
+                color: var(--dark-blue);
+            }
+
+            .product-img {
+                grid-area: g;
+                padding  : 0;
+
+                img {
+                    width     : 100%;
+                    transition: .5s;
+                }
+            }
+
+            .info {
+                grid-area: f;
+
+                h3 {
+                    margin     : .5rem;
+                    transition : .5s;
+                    font-weight: 600;
+                }
+
+                .detail-info {
+                    display  : flex;
+                    flex-wrap: wrap;
+                    margin   : 0.5rem;
+
+                    h4 {
+                        margin: 0.25rem;
+                    }
+                }
+            }
+
+            .toBuy {
+                grid-area: b;
+
+                >* {
+                    margin-bottom: .5rem;
+                }
+
+                .price {
+                    color    : var(--eye-catching-red);
+                    font-size: 24px;
+                }
+
+                .btn {
+                    display    : flex;
+                    align-items: center;
+                    padding    : 5px 12px;
+                    height     : 34px;
+                    width      : 140px;
+                    font-size  : 16px;
+
+                    >* {
+                        padding: 0 .25rem;
+                    }
+
+                    .cart {
+                        width : 22px;
+                        height: 22px;
+                    }
+                }
+            }
+        }
+
+        &.active {
+            display              : grid;
+            gap                  : 30px;
+            grid-template-columns: repeat(3, 1fr);
+
+            .card {
+                display      : block;
+                overflow     : hidden;
+                border-bottom: transparent;
+                transition   : .5s;
+                border-radius: 20px;
+
+                &:hover {
+                    background-color: var(--second-background-color);
+                }
+
+                .product-img {
+                    overflow: hidden;
+                    display : block;
+
+                    img {
+                        width     : 70%;
+                        display   : block;
+                        margin    : 0 auto;
+                        transition: .5s;
+                    }
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+                .info {
+                    padding: 0 1rem;
+
+                    .detail-info {
+                        display: none;
+                    }
+                }
+
+                .toBuy {
+                    display        : flex;
+                    justify-content: space-between;
+                    padding        : 0 2rem;
+
+                    .btn {
+                        visibility: hidden;
+
+                    }
+
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            padding: 0px;
+
+            .card {
+                grid-template-areas:
+                    "g f"
+                    "g b";
+                grid-template-columns: 2fr 3fr;
+                align-items          : center;
+
+                .product-img {
+                    img {
+                        width: 80%;
+                    }
+
+                }
+
+                .info {
+                    .detail-info {
+                        margin: 0;
+
+                        h4 {
+                            margin   : .5rem;
+                            font-size: 20px;
+
+                            &:not(.author) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+
+                .toBuy {
+                    margin : 0 .5rem;
+                    padding: 0 1rem;
+                }
+            }
+
+            &.active {
+                grid-template-columns: repeat(2, 1fr);
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            padding: 0px;
+
+            .card {
+                grid-template-areas:
+                    "g f"
+                    "g b";
+                grid-template-columns: repeat(2, 1fr);
+                align-items          : center;
+
+                .toBuy {
+                    padding: 0 1rem;
+                }
+            }
+
+            &.active {
+                grid-template-columns: repeat(2, 1fr);
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }
