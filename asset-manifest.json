@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/2021-mid-work-react.ver-/static/css/main.a71e7d2c.chunk.css",
-    "main.js": "/2021-mid-work-react.ver-/static/js/main.056c3287.chunk.js",
-    "main.js.map": "/2021-mid-work-react.ver-/static/js/main.056c3287.chunk.js.map",
-    "runtime-main.js": "/2021-mid-work-react.ver-/static/js/runtime-main.1c3f49b1.js",
-    "runtime-main.js.map": "/2021-mid-work-react.ver-/static/js/runtime-main.1c3f49b1.js.map",
-    "static/css/2.f85945a1.chunk.css": "/2021-mid-work-react.ver-/static/css/2.f85945a1.chunk.css",
-    "static/js/2.01732c66.chunk.js": "/2021-mid-work-react.ver-/static/js/2.01732c66.chunk.js",
-    "static/js/2.01732c66.chunk.js.map": "/2021-mid-work-react.ver-/static/js/2.01732c66.chunk.js.map",
-    "static/js/3.b940e4f0.chunk.js": "/2021-mid-work-react.ver-/static/js/3.b940e4f0.chunk.js",
-    "static/js/3.b940e4f0.chunk.js.map": "/2021-mid-work-react.ver-/static/js/3.b940e4f0.chunk.js.map",
+    "main.css": "/2021-mid-work-react.ver-/static/css/main.7cd25ea2.chunk.css",
+    "main.js": "/2021-mid-work-react.ver-/static/js/main.acd5f488.chunk.js",
+    "main.js.map": "/2021-mid-work-react.ver-/static/js/main.acd5f488.chunk.js.map",
+    "runtime-main.js": "/2021-mid-work-react.ver-/static/js/runtime-main.b7d9b404.js",
+    "runtime-main.js.map": "/2021-mid-work-react.ver-/static/js/runtime-main.b7d9b404.js.map",
+    "static/css/2.9643c219.chunk.css": "/2021-mid-work-react.ver-/static/css/2.9643c219.chunk.css",
+    "static/js/2.416d0628.chunk.js": "/2021-mid-work-react.ver-/static/js/2.416d0628.chunk.js",
+    "static/js/2.416d0628.chunk.js.map": "/2021-mid-work-react.ver-/static/js/2.416d0628.chunk.js.map",
+    "static/js/3.ac0e6d0a.chunk.js": "/2021-mid-work-react.ver-/static/js/3.ac0e6d0a.chunk.js",
+    "static/js/3.ac0e6d0a.chunk.js.map": "/2021-mid-work-react.ver-/static/js/3.ac0e6d0a.chunk.js.map",
     "index.html": "/2021-mid-work-react.ver-/index.html",
-    "static/css/2.f85945a1.chunk.css.map": "/2021-mid-work-react.ver-/static/css/2.f85945a1.chunk.css.map",
-    "static/css/main.a71e7d2c.chunk.css.map": "/2021-mid-work-react.ver-/static/css/main.a71e7d2c.chunk.css.map",
-    "static/js/2.01732c66.chunk.js.LICENSE.txt": "/2021-mid-work-react.ver-/static/js/2.01732c66.chunk.js.LICENSE.txt",
+    "static/css/2.9643c219.chunk.css.map": "/2021-mid-work-react.ver-/static/css/2.9643c219.chunk.css.map",
+    "static/css/main.7cd25ea2.chunk.css.map": "/2021-mid-work-react.ver-/static/css/main.7cd25ea2.chunk.css.map",
+    "static/js/2.416d0628.chunk.js.LICENSE.txt": "/2021-mid-work-react.ver-/static/js/2.416d0628.chunk.js.LICENSE.txt",
     "static/media/Scorpion.bf1cdd8b.jpg": "/2021-mid-work-react.ver-/static/media/Scorpion.bf1cdd8b.jpg",
     "static/media/about-us-bg.84736e0b.jpg": "/2021-mid-work-react.ver-/static/media/about-us-bg.84736e0b.jpg",
     "static/media/active1.873fc150.png": "/2021-mid-work-react.ver-/static/media/active1.873fc150.png",
@@ -60,10 +60,10 @@
     "static/media/test.0d3c856a.png": "/2021-mid-work-react.ver-/static/media/test.0d3c856a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1c3f49b1.js",
-    "static/css/2.f85945a1.chunk.css",
-    "static/js/2.01732c66.chunk.js",
-    "static/css/main.a71e7d2c.chunk.css",
-    "static/js/main.056c3287.chunk.js"
+    "static/js/runtime-main.b7d9b404.js",
+    "static/css/2.9643c219.chunk.css",
+    "static/js/2.416d0628.chunk.js",
+    "static/css/main.7cd25ea2.chunk.css",
+    "static/js/main.acd5f488.chunk.js"
   ]
 }
