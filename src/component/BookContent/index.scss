@@ -1,0 +1,51 @@
+.book-content {
+    .intro-tab {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr) 4fr;
+        gap                  : 30px;
+        margin-bottom        : .5rem;
+        border-bottom        : 2px solid var(--lightblue);
+
+        .intro-title {
+            font-size       : 20px;
+            color           : var(--blue);
+            background-color: var(--second-background-color);
+            padding         : .75rem 1rem;
+            text-align      : center;
+            cursor          : pointer;
+
+            &.active {
+                background-color: var(--blue);
+                color           : white;
+            }
+        }
+    }
+
+    .tab-view {
+        width   : 100%;
+        height  : 400px;
+        overflow: auto;
+        border  : 2px solid var(--lightblue);
+        padding : 2rem;
+
+        .intro-content {
+            display  : none;
+            font-size: 20px;
+
+            &.active{
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .intro-tab {
+            grid-template-columns: repeat(3, 1fr);
+            gap                  : 10px;
+
+            .intro-title {
+                padding: .75rem 0;
+            }
+        }
+    }
+}

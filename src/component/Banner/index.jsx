@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { gsap } from "gsap"
+import Title from "../Title"
 export default function Index({ title, BgImg }) {
     const Banner = styled.section`
     display        : flex;

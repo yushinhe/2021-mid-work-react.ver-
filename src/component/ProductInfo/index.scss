@@ -150,13 +150,15 @@
         .grid {
             grid-template-columns: 1fr;
 
-            .price-buy {
-                display              : grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows   : repeat(2, 1fr);
-                grid-template-areas  :
-                    'p .'
-                    'l b';
+            .info-group {
+                .price-buy {
+                    display              : grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows   : repeat(2, 1fr);
+                    grid-template-areas  :
+                        'p .'
+                        'l b';
+                }
             }
         }
     }

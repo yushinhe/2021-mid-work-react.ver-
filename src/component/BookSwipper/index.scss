@@ -1,0 +1,41 @@
+.swiper-container {
+    width : 100%;
+    height: 100%;
+
+    .swiper-slide {
+        text-align             : center;
+        font-size              : 18px;
+        margin                 : 0 3rem;
+        /* Center slide text vertically */
+        display                : -webkit-box;
+        display                : -ms-flexbox;
+        display                : -webkit-flex;
+        display                : flex;
+        cursor                 : pointer;
+        flex-direction         : column;
+        -webkit-box-pack       : center;
+        -ms-flex-pack          : center;
+        -webkit-justify-content: center;
+        justify-content        : center;
+        -webkit-box-align      : center;
+        -ms-flex-align         : center;
+        -webkit-align-items    : center;
+        align-items            : center;
+
+        img {
+            width: 60%;
+        }
+
+        .info {
+            &>* {
+                padding: .5rem 0;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .swiper-slide {
+            margin: 0;
+        }
+    }
+}

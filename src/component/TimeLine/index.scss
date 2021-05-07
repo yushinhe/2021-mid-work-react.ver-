@@ -7,7 +7,7 @@
         padding         : .5rem 3rem;
         border          : transparent;
         background-color: var(--second-background-color);
-        font-size: 18px;      
+        font-size       : 18px;
 
 
         &:focus {
@@ -15,7 +15,7 @@
         }
 
         >* {
-            background-color: var(--second-background-color);      
+            background-color: var(--second-background-color);
         }
     }
 
@@ -71,7 +71,7 @@
 
                 .intro {
                     p {
-                        width      : 80%;                    
+                        width      : 80%;
                         padding    : 1rem;
                         font-size  : 24px;
                         font-weight: 400;
@@ -117,6 +117,7 @@
 
                     .year {
                         padding: 0;
+
                         &:after {
                             left: -33px;
                         }
@@ -129,7 +130,7 @@
                 }
 
                 .things {
-                    padding:0 3rem 1rem;
+                    padding: 0 3rem 1rem;
 
                     .intro {
                         p {
@@ -143,6 +144,24 @@
                             width  : 100%;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:300px) {
+
+
+        .timeline {
+            position: relative;
+
+            li {
+                .time {
+                    padding: 1rem .5rem 1rem 3rem;
+                }
+
+                .things {
+                    padding: 1rem .5rem 1rem 3rem;
                 }
             }
         }

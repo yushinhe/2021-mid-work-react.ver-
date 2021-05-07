@@ -110,17 +110,19 @@
             top             : 60px;
             left            : 0;
             width           :50%;
+            min-width: 200px;
             height          : calc(100vh - 60px);
             background-color: var(--second-background-color);
             transform       : translateX(-100%);
             transition      : .5s;
         }
-
+        
         .sub-menu li {
             margin: 2rem 0;
         }
-
+        
         .sub-menu li a {
+            margin-right: 0;
             font-size  : 30px;
             font-weight: 600;
         }
