@@ -16,7 +16,7 @@ export default class index extends Component {
                             {
                                 recommandBook.map((item, index) => {
                                     return (
-                                        <Link to="/product-detail/:id" className="card">
+                                        <Link to={`/product-detail/${item.id}`} key={index} className="card">
                                             <div className="card-bg"></div>
                                             <p className="price">${item.price}</p>
                                             <img src={item.img} alt="" />
