@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Data from '../activedata';
 import Title from '../Title'
+import {Link} from 'react-router-dom'
 import './index.scss'
 export default class index extends Component {
     render() {
