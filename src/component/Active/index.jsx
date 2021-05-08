@@ -35,7 +35,7 @@ export default class index extends Component {
                             }
 
                         </div>
-                        <a href="./lecture.html" className="btn btn-black">了解更多</a>
+                        <Link to="./lecture" className="btn btn-black">了解更多</Link>
                     </div>
                 </section>
             </>

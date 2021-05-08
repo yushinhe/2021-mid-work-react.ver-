@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import Data from '../articleData'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './index.scss'
+
 export default class index extends Component {
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -13,6 +15,7 @@ export default class index extends Component {
             world: false
         }
     }
+    
     totalType = () => {
         let filterArticle;
         filterArticle = [...Data]
@@ -58,36 +61,36 @@ export default class index extends Component {
         })
     }
     render() {
-        console.log(this.state.data);
         return (
             <>
-                <ul class="word-menu">
-                    <li onClick={this.totalType} className={this.state.all?"active":""}>所有文章<div className="bg"></div></li>
-                    <li onClick={this.taiwanType} className={this.state.taiwan?"active":""} >台灣知識<div className="bg"></div></li>
-                    <li onClick={this.asiaType}  className={this.state.asia?"active":""}>東亞知識<div className="bg"></div></li>
-                    <li onClick={this.worldType} className={this.state.world?"active":""} >世界知識<div className="bg"></div> </li>
-                </ul>
-                <div className="word">
-                    {
-                        this.state.data.map((item, index) => {
-                            return (
-                                <>
-                                    <div key={item.id} className="item">
-                                        <img src={item.img.main} alt="" />
-                                        <div className="intro">
-                                            <h3>{item.title}</h3>
-                                            <p>{item.intro}
-                                            </p>
-                                            <Link to={`/article/${item.id}`} className="btn btn-blue">了解更多</Link>
+                <section className="article-list">
+                    <ul class="word-menu">
+                        <li onClick={this.totalType} className={this.state.all ? "active" : ""}>所有文章<div className="bg"></div></li>
+                        <li onClick={this.taiwanType} className={this.state.taiwan ? "active" : ""} >台灣知識<div className="bg"></div></li>
+                        <li onClick={this.asiaType} className={this.state.asia ? "active" : ""}>東亞知識<div className="bg"></div></li>
+                        <li onClick={this.worldType} className={this.state.world ? "active" : ""} >世界知識<div className="bg"></div> </li>
+                    </ul>
+                    <div className="word">
+                        {
+                            this.state.data.map((item, index) => {
+                                return (
+                                    <>
+                                        <div key={item.id} className="item">
+                                            <img src={item.img.main} alt="" />
+                                            <div className="intro">
+                                                <h3>{item.title}</h3>
+                                                <p>{item.intro}
+                                                </p>
+                                                <Link to={`/article/${item.id}`} className="btn btn-blue">了解更多</Link>
+                                            </div>
                                         </div>
-                                    </div>
-                                </>
-                            )
-                        })
-                    }
+                                    </>
+                                )
+                            })
+                        }
 
-
-                </div>
+                    </div>
+                </section>
             </>
         )
     }

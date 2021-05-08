@@ -1,7 +1,17 @@
 import React, { Component } from 'react'
 import './index.scss'
 export default class index extends Component {
-
+    constructor(props) {
+        super(props);
+        this.state = {
+          when:false,
+          wait:false,
+          asign:false,
+          invoice:false,
+          returnCommodity:false,
+          change:false
+        };
+    }
     
     render() {
         return (

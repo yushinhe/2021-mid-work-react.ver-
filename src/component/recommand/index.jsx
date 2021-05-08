@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Data from '../bookdata'
 import Title from '../Title'
+import {Link} from 'react-router-dom' 
 import './index.scss'
 export default class index extends Component {
     render() {
@@ -15,14 +16,14 @@ export default class index extends Component {
                             {
                                 recommandBook.map((item, index) => {
                                     return (
-                                        <a href="./product-detail.html" className="card">
+                                        <Link to="/product-detail/:id" className="card">
                                             <div className="card-bg"></div>
                                             <p className="price">${item.price}</p>
                                             <img src={item.img} alt="" />
                                             <div className="info">
                                                 <h4>{item.name}</h4>
                                             </div>
-                                        </a>
+                                        </Link>
                                     )
                                 })
                             }
