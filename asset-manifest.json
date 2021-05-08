@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/2021-mid-work-react.ver-/static/css/main.b70502d0.chunk.css",
+    "main.css": "/2021-mid-work-react.ver-/static/css/main.1aeb7435.chunk.css",
     "main.js": "/2021-mid-work-react.ver-/static/js/main.a767ba2a.chunk.js",
     "main.js.map": "/2021-mid-work-react.ver-/static/js/main.a767ba2a.chunk.js.map",
     "runtime-main.js": "/2021-mid-work-react.ver-/static/js/runtime-main.effca89c.js",
@@ -12,7 +12,7 @@
     "static/js/3.84fb2182.chunk.js.map": "/2021-mid-work-react.ver-/static/js/3.84fb2182.chunk.js.map",
     "index.html": "/2021-mid-work-react.ver-/index.html",
     "static/css/2.9643c219.chunk.css.map": "/2021-mid-work-react.ver-/static/css/2.9643c219.chunk.css.map",
-    "static/css/main.b70502d0.chunk.css.map": "/2021-mid-work-react.ver-/static/css/main.b70502d0.chunk.css.map",
+    "static/css/main.1aeb7435.chunk.css.map": "/2021-mid-work-react.ver-/static/css/main.1aeb7435.chunk.css.map",
     "static/js/2.91771200.chunk.js.LICENSE.txt": "/2021-mid-work-react.ver-/static/js/2.91771200.chunk.js.LICENSE.txt",
     "static/media/Scorpion.bf1cdd8b.jpg": "/2021-mid-work-react.ver-/static/media/Scorpion.bf1cdd8b.jpg",
     "static/media/about-us-bg.84736e0b.jpg": "/2021-mid-work-react.ver-/static/media/about-us-bg.84736e0b.jpg",
@@ -72,7 +72,7 @@
     "static/js/runtime-main.effca89c.js",
     "static/css/2.9643c219.chunk.css",
     "static/js/2.91771200.chunk.js",
-    "static/css/main.b70502d0.chunk.css",
+    "static/css/main.1aeb7435.chunk.css",
     "static/js/main.a767ba2a.chunk.js"
   ]
 }
