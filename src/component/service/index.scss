@@ -8,14 +8,12 @@
         gap                  : 30px;
 
         .item {
-            display           : grid;
-            // grid-template-rows: 1fr 2fr;    
+            display              : grid;
             grid-template-columns: 1fr;
-
-            gap               : 2rem;
-            align-items       : flex-start;
-            justify-content   : center;
-            padding           : 2rem 0;
+            gap                  : 1rem;
+            align-items          : flex-start;
+            justify-content      : center;
+            padding              : 2rem 0;
 
             .title {
                 margin: 0 auto;
@@ -32,16 +30,23 @@
                 font-weight: 600;
             }
 
-            li {
-                padding        : .5rem 0 0;
-                font-size      : 18px;
-                list-style-type: square;
-                position       : relative;
-                line-height    : 1.5;
+            ul {
+                width: 70%;
+                min-width: 200px;
+                margin: auto;
+                li {
+                    position       : relative;
+                    padding        : .5rem 0 0;
+                    font-size      : 18px;
+                    list-style-type: square;
+                    line-height    : 1.5;
+                    text-align: center;
+                }
             }
+
         }
 
-        &+&{
+        &+& {
             border-left: 1px black dotted;
         }
 

@@ -79,11 +79,17 @@
         width     : 130px;
         text-align: center;
     }
-
+    @media screen and (max-width:996px) {
+        .item-group {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+    }
 
     @media screen and (max-width:768px) {
         .item-group {
             grid-template-columns: 1fr;
+            gap: 60px;
 
             .card:hover {
                 transform: none;

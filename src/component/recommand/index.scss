@@ -77,10 +77,16 @@
         }
     }
 }
+@media screen and (max-width:1200px) {
+    .recommand {
+        .card-group {
+            gap: 30px;
+        }
+    }
+}
 
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:996px) {
     .recommand {
         .card-group {
             grid-template-columns: 1fr 1fr;
