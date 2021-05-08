@@ -7,6 +7,8 @@ import LectureRecent from '../component/LectureRecent'
 import Data from '../component/activedata'
 import Pagination from '../component/Pagination'
 import Footer from '../component/Footer'
+import TransformAnimation from '../component/TransformAnimation'
+
 export default function ProductList() {
     const ProductList = styled.div`   
     max-width: 1320px;
@@ -26,6 +28,7 @@ export default function ProductList() {
     `
     return (
         <>
+            <TransformAnimation />
             <Banner BgImg={Bg} title={'近期演講'}></Banner>
             <ProductList >
                 <Lecture>

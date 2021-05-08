@@ -17,7 +17,7 @@ import ScrollToTop from './component/ScrollToTop'
 export default function App() {
   return (
     <div>
-      <ScrollToTop>
+      <ScrollToTop>      
         <Switch>
           <Route exact path="/product-list" component={ProductList} />
           <Route exact path="/lecture" component={Lecture} />

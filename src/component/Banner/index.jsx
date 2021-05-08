@@ -43,7 +43,7 @@ export default function Index({ title, BgImg }) {
    `
     useEffect(() => {
         const tl = gsap.timeline({ default: { ease: "power1.out" } })
-        tl.to('#bg', { x: "100%", duration: 1, delay: 0.5 })
+        tl.to('#bg', { x: "100%", duration: 1, delay:2.5})
         tl.from('#title', { y: "50px", opacity: 0, duration: 1, stagger: .25 })
     }, [])
     return (

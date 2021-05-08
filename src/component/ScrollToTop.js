@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { withRouter } from 'react-router-dom'
+import { gsap } from "gsap"
 
 class ScrollToTop extends Component {
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -9,6 +10,9 @@ class ScrollToTop extends Component {
                 left: 0,
                 behavior: "smooth"
             });
+            const tl = gsap.timeline({ default: { ease: "power1.out" } })
+            tl.to('.page-transform li', { duration: .5, y: 0, opacity: 1, transformOrigin: "bottom left", stagger: .2 })
+            tl.to('.page-transform li', { duration: .5, yPercent: "100", opacity: 1, transformOrigin: "bottom left", stagger: .2 })
         }
     }
 

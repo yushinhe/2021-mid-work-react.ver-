@@ -9,11 +9,14 @@ import Active from '../component/Active'
 import Slogan from '../component/Slogan'
 import Contact from '../component/Contact'
 import Footer from '../component/Footer'
+import MainTransform from '../component/MainTransform'
+
 
 export default class home extends Component {
     render() {
         return (
             <>
+                <MainTransform />
                 <Hero />
                 <Service />
                 <Knowledge />

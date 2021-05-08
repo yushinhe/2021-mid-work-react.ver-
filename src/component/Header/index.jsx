@@ -29,9 +29,9 @@ export default class index extends Component {
                             <div className="menu-btn-burger"></div>
                         </div>
                         <ul className={this.state.isOpen ? "sub-menu active" : "sub-menu"}>
-                            <li><Link to="/product-list">來讀書吧</Link></li>
-                            <li><Link to="/lecture">演講活動</Link></li>
-                            <li><Link to="/articleList">好文分享</Link></li>
+                            <li><Link onClick={this.handeleToggle} to="/product-list">來讀書吧</Link></li>
+                            <li><Link onClick={this.handeleToggle} to="/lecture">演講活動</Link></li>
+                            <li><Link onClick={this.handeleToggle} to="/articleList">好文分享</Link></li>
                         </ul>
                     </nav>
                 </header >
