@@ -1,0 +1,266 @@
+/* banner */
+.article-banner {
+    margin-top: 60px;
+    padding: 0;
+    img {
+        width     : 100%;
+        height    : 540px;
+        object-fit: cover;
+    }
+}
+
+main {
+    margin-top: 60px;
+}
+
+.menu {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.menu>* {
+    padding  : 0 1rem;
+    font-size: 16px;
+}
+
+.title {
+    margin: 2rem;
+}
+
+.title h2 {
+    margin   : 1rem;
+    font-size: 60px;
+}
+
+.title h3 {
+    margin   : .5rem 1rem;
+    font-size: px;
+    color    : var(--darker-background-color);
+}
+
+.title-info {
+    margin : 0 1rem;
+    display: flex;
+}
+
+.title-info>* {
+    padding: 0 .5rem;
+}
+
+
+
+.content-container {
+    display              : grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    padding              : 3rem;
+    gap                  : 60px;
+}
+
+@media only screen and (max-width:768px) {
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.write-info li {
+    margin   : 1rem 0;
+    font-size: 18px;
+}
+
+.write-info li i {
+    font-size: 18px;
+    width    : 18px;
+    color    : var(--eye-catching-red);
+}
+
+.write-info li>* {
+    margin: 0 1rem;
+}
+
+article h3 {
+    font-size    : 36px;
+    font-weight  : 500;
+    margin-bottom: 2rem;
+}
+
+article p {
+    font-size    : 20px;
+    text-indent  : 2em;
+    margin-bottom: 2rem;
+}
+
+.big-pic {
+    display              : grid;
+    grid-template-columns: 1fr;
+}
+
+.big-pic img {
+    width: 100%;
+}
+
+.big-pic figcaption {
+    margin-top : .5rem;
+    padding-top: 1rem;
+    line-height: 1.5em;
+    font-size  : 18px;
+}
+
+.famous-saying {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+.famous-saying h4:nth-of-type(1) {
+    padding-top: 1rem;
+    border-top : 2px var(--eye-catching-red) solid;
+}
+
+.famous-saying>* {
+    font-size  : 18px;
+    line-height: 2;
+}
+
+.famous-saying h4>* {
+    padding: 0 .25rem;
+}
+
+.famous-saying h4:nth-of-type(2) {
+    text-align: right;
+}
+
+.famous-saying i {
+    color: var(--eye-catching-red);
+}
+
+.also-recommand {
+    display: grid;
+    grid-template-areas:
+        "..."
+        "recommand";
+    grid-template-rows: 2fr 7fr;
+}
+
+.also-recommand .recommand {
+    grid-area  : recommand;
+    padding-top: 1rem;
+    border-top : var(--eye-catching-red) 2px solid;
+}
+
+.also-recommand img {
+    width: 100%;
+}
+
+.recommand span,
+.recommand a {
+    display: block;
+    margin : 0.75rem 0;
+}
+
+.recommand span {
+    color: var(--eye-catching-red);
+}
+
+.recommand a {
+    text-decoration: none;
+    font-size      : 24px;
+}
+
+.social {
+    display        : flex;
+    justify-content: center;
+    margin         : 2rem 0;
+}
+
+.social li {
+    font-size: 18px;
+    padding  : 0 1rem;
+    cursor   : pointer;
+}
+
+.social li .fa-heart {
+    color: var(--eye-catching-red);
+}
+
+.message textarea {
+    width           : 100%;
+    height          : 200px;
+    background-color: transparent;
+    border          : 2px var(--second-background-color) solid;
+    padding         : 1rem;
+    font-size       : 20px;
+}
+
+.message .btn {
+    font-size  : 16px;
+    margin-top : 1rem;
+    margin-left: auto;
+    display    : block;
+}
+
+.change-page {
+    background-color: var(--second-background-color);
+    padding         : 60px 0;
+}
+
+.change-page .item-group {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.change-page .item {
+    text-decoration: none;
+    margin         : 0 auto;
+}
+
+.change-page .item i {
+    font-size : 20px;
+    transition: .5s;
+}
+
+.change-page .toPage>* {
+    padding: .5rem 0;
+}
+
+.change-page .toPage span {
+    font-size  : 12px;
+    font-weight: 300;
+    color      : var(--darker-background-color);
+}
+
+.change-page .toPage h3 {
+    font-size  : 28px;
+    font-weight: 500;
+}
+
+.change-page .item:nth-of-type(2) .icon {
+    display        : flex;
+    justify-content: flex-end;
+}
+
+.change-page .item:nth-of-type(1):hover i {
+    transform: translateX(-30px);
+}
+
+.change-page .item:nth-of-type(2):hover i {
+    transform: translateX(30px);
+}
+
+@media screen and (max-width:768px) {
+    .menu>* {
+        padding  : 0 1rem;
+        font-size: 16px;
+    }
+
+    .change-page .item-group {
+        grid-template-columns: 1fr;
+        gap                  : 50px;
+    }
+
+    .also-recommand {
+        grid-template-areas:
+            "recommand";
+        grid-template-rows: 1fr;
+    }
+}

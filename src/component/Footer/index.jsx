@@ -9,7 +9,7 @@ export default class index extends Component {
                 <footer className="main-footer">
                     <ul>
                         <li><Link className='link' to='/about'>關於我們</Link></li>
-                        <li><Link className='link' to='/about'>常見問題</Link></li>
+                        <li><Link className='link' to='/answer'>常見問題</Link></li>
                         <li><Link className='link' to='/about'>聯絡我們</Link></li>
                     </ul>
                     <p>© 太公望書林 , All Rights Reserved
