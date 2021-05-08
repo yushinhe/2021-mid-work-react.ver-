@@ -5,6 +5,7 @@ import Bg from '../img/main-img/about-us-bg.jpg'
 import TimeLine from '../component/TimeLine'
 import Footer from '../component/Footer'
 export default class About extends Component {
+    
     render() {
         return (
             <>
