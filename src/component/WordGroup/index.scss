@@ -54,7 +54,9 @@
         margin: .5rem;
 
         img {
+            height: 280px;
             width: 100%;
+            object-fit: cover;
         }
 
         .intro {
