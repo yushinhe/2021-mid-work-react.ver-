@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import img1 from '../../img/main-img/eagle.png'
 import './index.scss'
+import { FaChevronRight } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import Title from '../Title'
 export default class index extends Component {
     constructor(props) {
@@ -23,8 +25,8 @@ export default class index extends Component {
                                 <h3>{this.state.title}</h3>
                                 <p>{this.state.info}</p>
                                 <h4>{this.state.infofrom}</h4>
-                                <a href="./knowledge.html" className="btn btn-black">尋找更多知識 &nbsp; <i className="fas fa-chevron-right"></i>
-                                </a>
+                                <Link href="/articleList" className="btn btn-black">尋找更多知識 &nbsp; <FaChevronRight />
+                                </Link>
                             </div>
                         </div>
                     </div>

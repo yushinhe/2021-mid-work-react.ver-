@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import ImgSwiper from './imgSwipper';
 import { FaFacebook } from 'react-icons/fa'
-import { FaLine } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
+import { FaInstagram, FaChevronRight } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import './index.scss';
 export default class Hero extends Component {
@@ -20,15 +20,15 @@ export default class Hero extends Component {
     render() {
         return (
             <>
-            
+
                 <section className="hero">
                     <div className="bg"></div>
                     <div className="container grid">
                         <div className="info">
                             <h2>{this.state.info[0].title}</h2>
                             <p>{this.state.info[0].detail}</p>
-                            <a href="./product-list.html" className="btn btn-black"> 立刻選書 &nbsp; <i
-                                className="fas fa-chevron-right"></i></a>
+                            <Link to="/product-list" className="btn btn-black"> 立刻選書 &nbsp; <FaChevronRight
+                                className="fas fa-chevron-right" /></Link>
 
                         </div>
                         <div className="swiper-container">
