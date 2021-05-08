@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ImgSwiper from './imgSwipper';
-import { FaFacebook } from 'react-icons/fa'
-import { FaInstagram, FaChevronRight } from 'react-icons/fa'
+import { FaInstagram, FaChevronRight ,FaLine,FaFacebook} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import './index.scss';
