@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Data from '../bookdata'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { FaTh } from 'react-icons/fa'
 import { FaAlignJustify, } from 'react-icons/fa'
 import { FiShoppingCart } from 'react-icons/fi'
@@ -12,6 +12,7 @@ export default class index extends Component {
     state = {
         data: [...Data],
         toggleActive: false,
+        type: ''
     }
     handleToggle = () => {
         this.setState({
@@ -23,6 +24,7 @@ export default class index extends Component {
         let type = document.getElementById('type')
         if (type.value !== '全部') {
             sortData = sortData.filter(item => item.type === type.value)
+            type = type.value;
         }
         let sort = document.getElementById('sort')
         if (sort.value === 'asc') {
@@ -35,7 +37,8 @@ export default class index extends Component {
             sortData = sortData.sort((a, b) => a.id - b.id)
         }
         this.setState({
-            data: sortData
+            data: sortData,
+            type: type
         })
     }
     filterByPrice = () => {
@@ -81,6 +84,7 @@ export default class index extends Component {
                 <main>
                     <section className="booklist">
                         <div className="wrapper">
+                            <h3 className='type'> {this.state.type == '' ? '' : `目前種類:${this.state.type}`}</h3>
                             <div className="toggle">
                                 <h3>顯示模式：</h3>
                                 <button onClick={this.handleToggle} className={this.state.toggleActive === true ? "toggle-btn" : "toggle-btn active"}><FaAlignJustify></FaAlignJustify></button>

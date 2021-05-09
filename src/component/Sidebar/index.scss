@@ -48,6 +48,14 @@
 .booklist {
     padding-top: 0;
 
+    .type {
+        font-size: 36px;
+
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+    }
+
     .toggle {
         display        : flex;
         justify-content: flex-end;
