@@ -11,20 +11,51 @@
             background-color: var(--second-background-color);
             transform       : translate(3rem, 1rem);
 
+            @media screen and (max-width:768px) {
+                width    : 100%;
+                height   : auto;
+                padding  : 2rem;
+                transform: none;
+            }
+
+            @media screen and (max-width:576px) {
+                padding: 2rem 1.5rem;
+
+            }
+
+            h3 {
+                font-size  : 28px;
+                font-weight: 500;
+            }
+
             >* {
                 padding: .5rem 0;
             }
 
-            .info>* {
-                padding: .25rem 0;
+            .info {
+                h4 {
+                    display    : flex;
+                    align-items: center;
+                    font-size  : 22px;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+
+                &>* {
+                    padding: .25rem 0;
+                }
             }
 
             .icon {
                 padding  : 10px 10px 0;
                 color    : black;
                 font-size: 60px;
+
                 &:hover {
-                    color    : #6190E8;
+                    color: #6190E8;
                 }
             }
         }
@@ -47,12 +78,6 @@
             flex-wrap: wrap;
             padding  : 30px 0;
 
-            .info-group {
-                width    : 100%;
-                height   : auto;
-                padding  : 2rem;
-                transform: none;
-            }
 
             .icon {
                 justify-content: center;

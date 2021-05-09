@@ -4,6 +4,10 @@
     width                : 100%;
     text-align           : center;
 
+    @media screen and(max-width:576px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     li {
         position        : relative;
         overflow        : hidden;
@@ -49,6 +53,12 @@
     justify-items        : center;
     gap                  : 30px;
 
+    @media screen and (max-width:996px) {
+        grid-template-columns:repeat(2,1fr);
+    }
+    @media screen and (max-width:576px) {
+        grid-template-columns:1fr;
+    }
     .item {
         width : 100%;
         margin: .5rem;
@@ -85,12 +95,4 @@
         }
     }
 
-    @media screen and (max-width:768px) {
-        grid-template-columns: 1fr;
-
-        .grid-item {
-            width : 95%;
-            margin: 2.5% .5rem;
-        }
-    }
 }
