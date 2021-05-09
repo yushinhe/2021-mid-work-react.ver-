@@ -23,6 +23,9 @@
                 padding  : 10px 10px 0;
                 color    : black;
                 font-size: 60px;
+                &:hover {
+                    color    : #6190E8;
+                }
             }
         }
     }
