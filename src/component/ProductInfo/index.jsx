@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {FaHeart,FaShoppingCart} from 'react-icons/fa'
 import './index.scss'
 
 export default class index extends Component {
@@ -54,8 +55,8 @@ export default class index extends Component {
                             </div>
                             <div className="price-buy">
                                 <h3 className="price">${this.state.data.price}</h3>
-                                <div className="like"><i className="far fa-heart"></i> 加入收藏</div>
-                                <div className="btn btn-red"><i className="fas fa-shopping-cart"></i> 加入購物車</div>
+                                <div className="like"><FaHeart/> 加入收藏</div>
+                                <div className="btn btn-red"><FaShoppingCart/> 加入購物車</div>
                             </div>
                         </div>
                     </div>

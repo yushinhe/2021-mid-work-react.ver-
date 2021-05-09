@@ -122,6 +122,10 @@
                     align-items: center;
                     height     : 34px;
                     cursor     : pointer;
+
+                    svg {
+                       margin: 0 .25rem;
+                    }
                 }
 
                 .btn {

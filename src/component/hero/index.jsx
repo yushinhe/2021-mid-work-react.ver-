@@ -19,7 +19,6 @@ export default class Hero extends Component {
     render() {
         return (
             <>
-
                 <section className="hero">
                     <div className="bg"></div>
                     <div className="container grid">

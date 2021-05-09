@@ -6,15 +6,19 @@
         margin   : 0 auto;
         padding  : 2rem;
 
+        @media screen and (max-width:576px) {
+            padding: 2rem 10px;
+        }
+
         .according-item {
             .according-head {
-                position   : relative;
-                background : var(--second-background-color);
-                padding    : 1rem 1.5rem;
-                font-size  : 18px;
-                font-weight: 600;
+                position     : relative;
+                background   : var(--second-background-color);
+                padding      : 1rem 1.5rem;
+                font-size    : 18px;
+                font-weight  : 600;
                 margin-bottom: 0;
-                cursor     : pointer;
+                cursor       : pointer;
             }
 
             &.close .according-head::after,

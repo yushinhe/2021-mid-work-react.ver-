@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { FaUser, FaCalendarAlt, FaTag, FaChevronRight, FaArrowRight, FaArrowLeft, FaHeart, FaShareAlt } from 'react-icons/fa'
+import { TiArrowSortedUp } from 'react-icons/ti'
 import { Link } from 'react-router-dom'
 import Data from '../articleData'
 import './index.scss'
@@ -67,7 +68,7 @@ export default class index extends Component {
                         </div>
                         <figure className="big-pic container">
                             <img src={this.state.data.img.introImg} alt={this.state.data.img.imgIntro} />
-                            <figcaption>{this.state.data.img.imgIntro} </figcaption>
+                            <figcaption>< TiArrowSortedUp />{this.state.data.img.imgIntro} </figcaption>
                         </figure>
                         <div className="content-container container">
                             <div className="famous-saying">
@@ -91,7 +92,7 @@ export default class index extends Component {
                                 </p>
                                 <ul className="social">
                                     <li>
-                                        <FaHeart className="icon"/>&nbsp;&nbsp; 527
+                                        <FaHeart className="icon" />&nbsp;&nbsp; 527
                                     </li>
                                     <li>
                                         <FaShareAlt />&nbsp; &nbsp;分享

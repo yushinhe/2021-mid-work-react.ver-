@@ -12,14 +12,73 @@ export default class index extends Component {
           change:false
         };
     }
-    
+    clickWhen=()=>{
+        this.setState({
+            when:!this.state.when,
+            wait:false,
+            asign:false,
+            invoice:false,
+            returnCommodity:false,
+            change:false,
+        })
+    }
+    clickWait=()=>{
+        this.setState({
+            when:false,
+            wait:!this.state.wait,
+            asign:false,
+            invoice:false,
+            returnCommodity:false,
+            change:false,
+        })
+    }
+    clickAsign=()=>{
+        this.setState({
+            when:false,
+            wait:false,
+            asign:!this.state.asign,
+            invoice:false,
+            returnCommodity:false,
+            change:false,
+        })
+    }
+    clickInvoice=()=>{
+        this.setState({
+            when:false,
+            wait:false,
+            asign:false,
+            invoice:!this.state.invoice,
+            returnCommodity:false,
+            change:false,
+        })
+    }
+    clickReturnCommodity=()=>{
+        this.setState({
+            when:false,
+            wait:false,
+            asign:false,
+            invoice:false,
+            returnCommodity:!this.state.returnCommodity,
+            change:false,
+        })
+    }
+    clickChange=()=>{
+        this.setState({
+            when:false,
+            wait:false,
+            asign:false,
+            invoice:false,
+            returnCommodity:false,
+            change:!this.state.change,
+        })
+    }
     render() {
         return (
             <>
                 <article className="answer">
                     <div className="container">
                         <div className="according-group">
-                            <div className="according-item close">
+                            <div onClick={this.clickWhen} className={this.state.when?"according-item open":"according-item close"}>
                                 <h3 className="according-head">訂單成立後多久能拿到書</h3>
                                 <div className="according-content">
                                     <p>
@@ -32,7 +91,7 @@ export default class index extends Component {
                                     </p>
                                 </div>
                             </div>
-                            <div className="according-item close">
+                            <div onClick={this.clickWait} className={this.state.wait?"according-item open":"according-item close"}>
                                 <h3 className="according-head"> 沒有庫存的書要等多久</h3>
                                 <div className="according-content">
                                     <p>
@@ -47,7 +106,7 @@ export default class index extends Component {
                                     </p>
                                 </div>
                             </div>
-                            <div className="according-item close">
+                            <div  onClick={this.clickAsign} className={this.state.asign?"according-item cpen":"according-item close"}>
                                 <h3 className="according-head"> 可不可以指定書籍版次</h3>
                                 <div className="according-content">
                                     <p>
@@ -59,7 +118,7 @@ export default class index extends Component {
                                     </p>
                                 </div>
                             </div>
-                            <div className="according-item close">
+                            <div onClick={this.clickInvoice} className={this.state.invoice?"according-item open":"according-item close"}>
                                 <h3 className="according-head"> 會開發票嗎？發票可以打統編與抬頭嗎？</h3>
                                 <div className="according-content">
                                     <p>
@@ -68,7 +127,7 @@ export default class index extends Component {
                                     </p>
                                 </div>
                             </div>
-                            <div className="according-item close">
+                            <div onClick={this.clickReturnCommodity} className={this.state.returnCommodity?"according-item open":"according-item close"}>
                                 <h3 className="according-head"> 當日宅配的商品可以退貨嗎？</h3>
                                 <div className="according-content">
                                     <p>
@@ -76,7 +135,7 @@ export default class index extends Component {
                                     </p>
                                 </div>
                             </div>
-                            <div className="according-item close">
+                            <div onClick={this.clickChange} className={this.state.change?"according-item open":"according-item close"}>
                                 <h3 className="according-head"> 當日宅配的商品可以換貨嗎？</h3>
                                 <div className="according-content">
                                     <p>

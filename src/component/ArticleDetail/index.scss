@@ -32,6 +32,10 @@
         .title {
             margin: 2rem;
 
+            @media screen and (max-width:992px) {
+                margin: 2rem 1rem .5rem;
+            }
+
             h2 {
                 margin   : 1rem;
                 font-size: 60px;
@@ -39,7 +43,7 @@
 
             h3 {
                 margin   : .5rem 1rem;
-                font-size: px;
+                font-size: 32px;
                 color    : var(--darker-background-color);
             }
         }
@@ -53,6 +57,9 @@
 
             @media only screen and (max-width:992px) {
                 grid-template-columns: 1fr;
+                gap                  : 30px;
+                padding              : 1rem;
+
             }
 
             ul {
@@ -204,6 +211,9 @@
                 padding-top: 1rem;
                 line-height: 1.5em;
                 font-size  : 18px;
+                @media screen and (max-width:768px) {
+                    padding-top: 0;
+                }
             }
         }
 

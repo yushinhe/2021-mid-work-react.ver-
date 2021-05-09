@@ -17,5 +17,8 @@
     p {
         padding   : 10px;
         text-align: center;
+        @media screen and (max-width:576px){
+            padding: 10px 0;
+        }
     }
 }

@@ -21,7 +21,7 @@ export default class index extends Component {
     FilterType = () => {
         let sortData = [...Data];
         let type = document.getElementById('type')
-        if (type.value !== 'all') {
+        if (type.value !== '全部') {
             sortData = sortData.filter(item => item.type === type.value)
         }
         let sort = document.getElementById('sort')
@@ -52,7 +52,7 @@ export default class index extends Component {
         let types = getUnique(Data, 'type')
         console.log(this.state.maxPrice);
         console.log(this.state.minPrice);
-        types = ['all', ...types]
+        types = ['全部', ...types]
         return (
             <>
                 <aside>

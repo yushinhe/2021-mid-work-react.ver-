@@ -28,6 +28,10 @@ export default class index extends Component {
             formActive: !this.state.formActive
         })
     }
+    formSubmit=()=>{
+        let customerName =document.getElementById('name')
+        window.alert(`已成功報名${this.state.title}`)
+    }
     render() {
         return (
             <>
@@ -49,7 +53,7 @@ export default class index extends Component {
                 < LectureDetail detailActive={this.state.detailActive} toggleActive={this.detailActiveToggle} title={this.state.title} host={this.state.host} startTime={this.state.startTime} location={this.state.location} price={this.state.price} img={this.state.img}
                 />
 
-                < LectureForm formActive={this.state.formActive} formActiveToggle={this.formActiveToggle} title={this.state.title} host={this.state.host} startTime={this.state.startTime} location={this.state.location} price={this.state.price}
+                < LectureForm formActive={this.state.formActive} formActiveToggle={this.formActiveToggle} title={this.state.title} host={this.state.host} startTime={this.state.startTime} location={this.state.location} price={this.state.price}  formSubmit={this.formSubmit}
                 />
 
             </>
