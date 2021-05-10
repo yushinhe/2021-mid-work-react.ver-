@@ -26,6 +26,10 @@
                     padding  : 0 1rem;
                     font-size: 16px;
                 }
+                @media screen and (max-width:576px) {
+                    padding  : 0 0 .5rem;
+                    font-size: 16px;
+                }
             }
         }
 
