@@ -99,7 +99,7 @@
             justify-content: center;
             align-items    : center;
             z-index        : 5;
-            background     : rgba(255,255,255,.3);
+            background     : rgba(255, 255, 255, .3);
 
             &:hover {
                 background-color: var(--primary-background-color);
@@ -171,6 +171,15 @@
                 background-color: var(--darker-background-color);
                 color           : white;
                 font-size       : 24px;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        &.active {
+            .lecture-info {
+                transform: translate(0, 0);
+                padding  : 3rem 10px;
             }
 
         }
