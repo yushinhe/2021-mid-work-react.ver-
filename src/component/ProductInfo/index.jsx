@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {FaHeart,FaShoppingCart} from 'react-icons/fa'
+import { FaHeart, FaShoppingCart } from 'react-icons/fa'
 import './index.scss'
 
 export default class index extends Component {
@@ -8,23 +8,29 @@ export default class index extends Component {
         this.state = {
             data: props.Data,
             num: 1,
+            collection: false,
         };
     }
-    plus= () => {
-        if (this.state.num<this.state.data.quantity) {            
+    plus = () => {
+        if (this.state.num < this.state.data.quantity) {
             this.setState({
                 num: this.state.num + 1
             })
-        }else{
+        } else {
             alert('達到上限了歐')
         }
     }
-    minus= () => {
-        if (this.state.num>2) {            
+    toggleCollection = () => {
+        this.setState({
+            collection: !this.state.collection
+        })
+    }
+    minus = () => {
+        if (this.state.num > 2) {
             this.setState({
                 num: this.state.num - 1
             })
-        }else{
+        } else {
             alert('不能再減了歐')
         }
     }
@@ -49,14 +55,14 @@ export default class index extends Component {
                                 <h4>目前庫存<span>{this.state.data.quantity}</span>本</h4>
                                 <div className="amountCount">
                                     <button onClick={this.minus}>-</button>
-                                    <input type='number' min="1" max="{this.state.data.quantity}" value={this.state.num}name="" id="amount" />
+                                    <input type='number' min="1" max="{this.state.data.quantity}" value={this.state.num} name="" id="amount" />
                                     <button onClick={this.plus}>+</button>
                                 </div>
                             </div>
                             <div className="price-buy">
                                 <h3 className="price">${this.state.data.price}</h3>
-                                <div className="like"><FaHeart/> 加入收藏</div>
-                                <div className="btn btn-red"><FaShoppingCart/> 加入購物車</div>
+                                <div onClick={this.toggleCollection} className="like"><FaHeart /> {this.state.collection?'已加入收藏':'加入收藏'}</div>
+                                <div className="btn btn-red"><FaShoppingCart /> 加入購物車</div>
                             </div>
                         </div>
                     </div>
