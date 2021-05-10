@@ -57,6 +57,10 @@
                 border-bottom   : var(--second-background-color) 3px solid;
                 font-size       : 1.3rem;
 
+                @media screen and (max-width:768px) {
+                    margin: 1rem 0;
+                }
+
                 &:focus {
                     outline: transparent;
                 }
