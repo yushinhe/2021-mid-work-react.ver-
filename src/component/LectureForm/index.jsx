@@ -40,7 +40,6 @@ export default function index({ title, startTime, location, price, formActiveTog
                         </div>
                         <div className="btn-group">
                             <button onClick={formSubmit} id="submit" type="submit" className="btn btn-blue">送出</button>
-                            <button type="reset" className="reset-btn">重新填寫</button>
                         </div>
                     </form>
                 </div>
