@@ -12,7 +12,7 @@ export default class index extends Component {
     state = {
         data: [...Data],
         toggleActive: false,
-        type: ''
+        type: '全部'
     }
     handleToggle = () => {
         this.setState({
@@ -22,9 +22,10 @@ export default class index extends Component {
     FilterType = () => {
         let sortData = [...Data];
         let type = document.getElementById('type')
+        let filtType=''
+        filtType = type.value;
         if (type.value !== '全部') {
             sortData = sortData.filter(item => item.type === type.value)
-            type = type.value;
         }
         let sort = document.getElementById('sort')
         if (sort.value === 'asc') {
@@ -38,7 +39,7 @@ export default class index extends Component {
         }
         this.setState({
             data: sortData,
-            type: type
+            type: filtType
         })
     }
     filterByPrice = () => {
@@ -84,7 +85,7 @@ export default class index extends Component {
                 <main>
                     <section className="booklist">
                         <div className="wrapper">
-                            <h3 className='type'> {this.state.type == '' ? '' : `目前種類:${this.state.type}`}</h3>
+                            <h3 className='type'> {`目前種類:${this.state.type}`}</h3>
                             <div className="toggle">
                                 <h3>顯示模式：</h3>
                                 <button onClick={this.handleToggle} className={this.state.toggleActive === true ? "toggle-btn" : "toggle-btn active"}><FaAlignJustify></FaAlignJustify></button>
