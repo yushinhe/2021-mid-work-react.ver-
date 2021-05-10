@@ -31,15 +31,20 @@
             }
 
             ul {
-                width: 70%;
+                width    : 70%;
                 min-width: 200px;
-                margin: auto;
+                margin   : auto;
+
                 li {
-                    position       : relative;
-                    padding        : .5rem 0 0;
-                    font-size      : 18px;
-                    line-height    : 1.5;
-                    text-align: center;
+                    position   : relative;
+                    padding    : .5rem 0 0;
+                    font-size  : 18px;
+                    line-height: 1.5;
+                    text-align : center;
+
+                    @media screen and (max-width:768px) {
+                        list-style-type: square;
+                    }
                 }
             }
 
