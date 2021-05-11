@@ -10,8 +10,7 @@ export default class ProductDetail extends Component {
         const findResult = Data.find(detailObj => {
             return detailObj.id === id
         })
-        console.log(findResult);
-
+       
         return (
             <>
                 <ArticleDetail Data={findResult} />
