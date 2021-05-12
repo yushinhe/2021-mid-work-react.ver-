@@ -26,7 +26,7 @@ export default class index extends Component {
         })
     }
     minus = () => {
-        if (this.state.num > 2) {
+        if (this.state.num > 1) {
             this.setState({
                 num: this.state.num - 1
             })

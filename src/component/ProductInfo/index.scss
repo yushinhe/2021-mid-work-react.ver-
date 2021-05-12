@@ -60,14 +60,25 @@
             }
 
             .amount {
-                display: flex;
+                display              : grid;
+                grid-template-columns: repeat(4, 1fr) ;
+                column-gap           : 30px;
+
+                @media screen and (max-width:996px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media screen and (max-width:576px) {
+                    grid-template-columns: 1fr;
+                }
 
                 h4 {
                     margin-bottom: 1em;
                 }
 
                 .amountCount {
-                    font-size: 0;
+                    margin-bottom: 25px;
+                    font-size    : 0;
                 }
 
                 input {
@@ -108,6 +119,27 @@
                 ;
                 gap: 30px;
 
+                @media screen and (max-width:1200px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                @media screen and (max-width:996px) {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows   : repeat(2, 1fr);
+                    grid-template-areas  :
+                        'p .'
+                        'l b';
+                }
+
+                @media screen and (max-width:370px) {
+                    grid-template-columns: 1fr;
+                    grid-template-rows   : 1fr;
+                    grid-template-areas  :
+                        'p '
+                        'l'
+                        'b';
+                }
+
                 .price {
                     grid-area    : p;
                     margin-bottom: 0;
@@ -124,7 +156,7 @@
                     cursor     : pointer;
 
                     svg {
-                       margin: 0 .25rem;
+                        margin: 0 .25rem;
                     }
                 }
 
@@ -153,17 +185,6 @@
     @media screen and (max-width:768px) {
         .grid {
             grid-template-columns: 1fr;
-
-            .info-group {
-                .price-buy {
-                    display              : grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-rows   : repeat(2, 1fr);
-                    grid-template-areas  :
-                        'p .'
-                        'l b';
-                }
-            }
         }
     }
 }

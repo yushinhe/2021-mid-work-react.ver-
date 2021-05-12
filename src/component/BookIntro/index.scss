@@ -1,11 +1,11 @@
 .book-intro {
-    display: grid;
+    display              : grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-areas: '. h .';
-    position  : relative;
-    text-align: center;
-    margin    : 30px auto;
-    padding   : 2rem 0;
+    grid-template-areas  : '. h .';
+    position             : relative;
+    text-align           : center;
+    margin               : 30px auto;
+    padding              : 2rem 0;
 
     .bg {
         width          : 100%;
@@ -20,6 +20,7 @@
     }
 
     h3 {
-        grid-area: h;
+        grid-area  : h;
+        white-space: pre-wrap;
     }
 }

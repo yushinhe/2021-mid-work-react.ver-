@@ -27,7 +27,7 @@
         overflow: auto;
         border  : 2px solid var(--lightblue);
         padding : 2rem;
-        white-space: pre;
+        white-space: pre-wrap;
 
         .intro-content {
             display  : none;
