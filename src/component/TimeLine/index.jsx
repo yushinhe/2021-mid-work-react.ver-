@@ -46,9 +46,9 @@ export default class index extends Component {
                                                 <div className="year">
                                                     <h3>{item.year}</h3>
                                                 </div>
-                                                {item.subtitle === false ? '' : <h3 class="year-thing">{item.subtitle}</h3>}
+                                                {item.subtitle === false ? '' : <h3 className="year-thing">{item.subtitle}</h3>}
                                             </div>
-                                            <div class="things">
+                                            <div className="things">
                                                 <div className="intro">
                                                     <p>
                                                         {item.detail}

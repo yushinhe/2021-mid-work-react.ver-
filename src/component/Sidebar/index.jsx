@@ -62,7 +62,7 @@ export default class index extends Component {
                 <aside>
                     <div className="sidebar">
                         <h3>類型篩選</h3>
-                        <div class="form-check">
+                        <div className="form-check">
                             <label htmlFor="type">依種類分類</label>
                             <select name="type" id="type" className="form-select" onChange={this.FilterType}>
                                 {types.map((item, index) => {

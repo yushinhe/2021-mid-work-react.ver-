@@ -12,19 +12,19 @@ export default function Index() {
     return (
         <>
             <div id="intro">
-                <div class="intro-txt">
-                    <h3 class="hide">
-                        <span class="txt">
+                <div className="intro-txt">
+                    <h3 className="hide">
+                        <span className="txt">
                             人的成長就是戰勝過去
                         </span>
                     </h3>
-                    <h3 class="hide">
-                        <span class="txt">
+                    <h3 className="hide">
+                        <span className="txt">
                             不成熟的自己
                         </span>
                     </h3>
-                    <h3 class="hide">
-                        <span class="txt">
+                    <h3 className="hide">
+                        <span className="txt">
                             —迪亞布羅
                         </span>
                     </h3>
