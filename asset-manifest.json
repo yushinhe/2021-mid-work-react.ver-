@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/2021-mid-work-react.ver-/static/css/main.13a4c2ed.chunk.css",
-    "main.js": "/2021-mid-work-react.ver-/static/js/main.ca5f4be3.chunk.js",
-    "main.js.map": "/2021-mid-work-react.ver-/static/js/main.ca5f4be3.chunk.js.map",
+    "main.css": "/2021-mid-work-react.ver-/static/css/main.c46fa2a5.chunk.css",
+    "main.js": "/2021-mid-work-react.ver-/static/js/main.59cdabc1.chunk.js",
+    "main.js.map": "/2021-mid-work-react.ver-/static/js/main.59cdabc1.chunk.js.map",
     "runtime-main.js": "/2021-mid-work-react.ver-/static/js/runtime-main.7ad33588.js",
     "runtime-main.js.map": "/2021-mid-work-react.ver-/static/js/runtime-main.7ad33588.js.map",
-    "static/css/2.ac9736dd.chunk.css": "/2021-mid-work-react.ver-/static/css/2.ac9736dd.chunk.css",
+    "static/css/2.d74e0b98.chunk.css": "/2021-mid-work-react.ver-/static/css/2.d74e0b98.chunk.css",
     "static/js/2.b8bd9ac9.chunk.js": "/2021-mid-work-react.ver-/static/js/2.b8bd9ac9.chunk.js",
     "static/js/2.b8bd9ac9.chunk.js.map": "/2021-mid-work-react.ver-/static/js/2.b8bd9ac9.chunk.js.map",
     "static/js/3.27a0dd6f.chunk.js": "/2021-mid-work-react.ver-/static/js/3.27a0dd6f.chunk.js",
     "static/js/3.27a0dd6f.chunk.js.map": "/2021-mid-work-react.ver-/static/js/3.27a0dd6f.chunk.js.map",
     "index.html": "/2021-mid-work-react.ver-/index.html",
-    "static/css/2.ac9736dd.chunk.css.map": "/2021-mid-work-react.ver-/static/css/2.ac9736dd.chunk.css.map",
-    "static/css/main.13a4c2ed.chunk.css.map": "/2021-mid-work-react.ver-/static/css/main.13a4c2ed.chunk.css.map",
+    "static/css/2.d74e0b98.chunk.css.map": "/2021-mid-work-react.ver-/static/css/2.d74e0b98.chunk.css.map",
+    "static/css/main.c46fa2a5.chunk.css.map": "/2021-mid-work-react.ver-/static/css/main.c46fa2a5.chunk.css.map",
     "static/js/2.b8bd9ac9.chunk.js.LICENSE.txt": "/2021-mid-work-react.ver-/static/js/2.b8bd9ac9.chunk.js.LICENSE.txt",
     "static/media/Scorpion.bf1cdd8b.jpg": "/2021-mid-work-react.ver-/static/media/Scorpion.bf1cdd8b.jpg",
     "static/media/about-us-bg.84736e0b.jpg": "/2021-mid-work-react.ver-/static/media/about-us-bg.84736e0b.jpg",
@@ -70,9 +70,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7ad33588.js",
-    "static/css/2.ac9736dd.chunk.css",
+    "static/css/2.d74e0b98.chunk.css",
     "static/js/2.b8bd9ac9.chunk.js",
-    "static/css/main.13a4c2ed.chunk.css",
-    "static/js/main.ca5f4be3.chunk.js"
+    "static/css/main.c46fa2a5.chunk.css",
+    "static/js/main.59cdabc1.chunk.js"
   ]
 }
